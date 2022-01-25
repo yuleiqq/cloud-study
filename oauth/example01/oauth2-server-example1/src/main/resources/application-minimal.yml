@@ -1,0 +1,7 @@
+
+# 注册 client 客户端
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: client

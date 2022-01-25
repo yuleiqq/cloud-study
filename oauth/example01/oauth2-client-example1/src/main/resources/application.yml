@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+             authorizationserver:
+                  client-id: client-for-server
+                  client-secret: client-for-server
+                  provider: authorizationserver
+                  client-name:  使用自定义授权服务器登录
+                  authorization-grant-type: authorization_code
+                  client-authentication-method: basic
+                  scope: profile,email
+                  redirect-uri-template: "http://localhost:8080/login/oauth2/code/authorizationserver"
+        provider:
+           authorizationserver:
+               authorization-uri: http://auth-server:9999/oauth/authorize
+               token-uri: http://auth-server:9999/oauth/token
+               user-info-uri: http://auth-server:9999/me
+               user-name-attribute: "name"
+
+
