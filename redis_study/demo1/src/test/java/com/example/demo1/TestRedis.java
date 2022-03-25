@@ -1,30 +1,34 @@
 package com.example.demo1;
 
-import com.example.demo1.domain.UserDO;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.BoundSetOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 
+import java.util.Set;
+
 @SpringBootTest
-class Demo1ApplicationTests {
+public class TestRedis {
 
     @Autowired
-   private  RedisTemplate redisTemplate;
-
+    private RedisTemplate redisTemplate;
 
     @Autowired
-    private StringRedisTemplate  stringRedisTemplate;
+    private StringRedisTemplate stringRedisTemplate;
 
+    /**
+     * 用户画像
+     */
 
     @Test
-    public void testStringSet(){
-
-        ValueOperations valueOperations = redisTemplate.opsForValue();
-
-        valueOperations.set("name","yulei");
+    public void userProfile(){
+        BoundSetOperations boundSetOperations = redisTemplate.boundSetOps("user:tags:1");
+        boundSetOperations.add("dd","cc","dd","mm");
+        Set members = boundSetOperations.members();
+        System.out.println(members);
 
     }
 
@@ -37,22 +41,6 @@ class Demo1ApplicationTests {
         Object name = valueOperations.get("name");
         System.out.println(name);
     }
-
-
-    /**
-     * 测试序列化
-     */
-    @Test
-    public void testSeria(){
-
-        UserDO userDO = new UserDO();
-        userDO.setId(1);
-        userDO.setName("tom");
-
-        redisTemplate.opsForValue().set("user:2",userDO);
-
-    }
-
 
 
 }
