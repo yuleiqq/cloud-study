@@ -23,8 +23,18 @@ class Demo1ApplicationTests {
 
         ValueOperations valueOperations = redisTemplate.opsForValue();
 
-        valueOperations.set("name","yueli");
+        valueOperations.set("name","yulei");
 
     }
 
+
+
+    @Test
+    public void testStringGet(){
+
+        ValueOperations valueOperations = redisTemplate.opsForValue();
+
+        Object name = valueOperations.get("name");
+        System.out.println(name);
+    }
 }
