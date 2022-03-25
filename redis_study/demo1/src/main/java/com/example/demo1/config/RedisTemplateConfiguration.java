@@ -42,11 +42,7 @@ public class RedisTemplateConfiguration {
 
         redisTemplate.afterPropertiesSet();
 
-
-
         return  redisTemplate;
     }
-
-
 
 }

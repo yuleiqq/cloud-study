@@ -29,7 +29,7 @@ public class CaptchaConfig {
         //干扰线颜色
         //干扰实现类 properties.setProperty(Constants.KAPTCHA_NOISE_IMPL, "com.google.code.kaptcha.impl.NoNoise"); //图片样式
         properties.setProperty(Constants.KAPTCHA_OBSCURIFICATOR_IMPL, "com.google.code.kaptcha.impl.WaterRipple");
-      //文字来源
+        //文字来源
         properties.setProperty(Constants.KAPTCHA_TEXTPRODUCER_CHAR_STRING, "0123456789");
 
         Config config = new Config(properties);
