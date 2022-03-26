@@ -17,9 +17,10 @@ public class JsonData {
     private String msg;
 
     public JsonData(int code, Object data, String msg) {
+
         this.code = code;
         this.msg = msg;
-        this.code = code;
+        this.data = data;
 
     }
 
@@ -34,8 +35,7 @@ public class JsonData {
       * @param data
       * @return
      */
-    public static JsonData buildSuccess(Object
-                                                data) {
+    public static JsonData buildSuccess(Object data) {
         return new JsonData(0, data, null);
     }
 

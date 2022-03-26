@@ -1,7 +1,5 @@
 package com.example.demo1.domain;
 
-import java.io.Serializable;
-
 public class UserDO  {
 
     private int id;

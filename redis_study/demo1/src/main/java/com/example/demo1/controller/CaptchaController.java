@@ -69,6 +69,8 @@ public class CaptchaController {
 
          String key = getCaptchaKey(request);
 
+        System.out.println("进入获取图片验证码");
+
         String cacheCaptcha = redisTemplate.opsForValue().get(key);
 
 
