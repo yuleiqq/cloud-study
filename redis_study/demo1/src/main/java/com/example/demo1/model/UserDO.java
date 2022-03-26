@@ -1,4 +1,4 @@
-package com.example.demo1.domain;
+package com.example.demo1.model;
 
 public class UserDO  {
 
