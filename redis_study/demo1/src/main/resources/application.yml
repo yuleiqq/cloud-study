@@ -1,9 +1,13 @@
 server:
   port: 8080
 
-
-#redis ??
+#redis
 spring:
   redis:
     host: 127.0.0.1
+    port: 6379
+
+  #指定缓存类型
+  cache:
+    type: redis
 
