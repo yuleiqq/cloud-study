@@ -3,9 +3,11 @@
 ```sh
 docker run -d --name  dd_clickhouse --ulimit nofile=262144:262144 \
 -p 8123:8123 -p 9000:9000 -p 9009:9009 --privileged=true \
--v /Users/yulei/docker/clickhouse/log:/var/log/clickhouse-server \
--v /Users/yulei/docker/clickhouse/data:/var/lib/clickhouse clickhouse/clickhouse-server:22.2.3.5
+-v /mydata/docker/clickhouse/log:/var/log/clickhouse-server \
+-v /mydata/docker/clickhouse/data:/var/lib/clickhouse clickhouse/clickhouse-server:22.2.3.5
 ```
+
+
 
 - **默认http端口是8123，tcp端口是9000, 同步端口9009**
 
@@ -70,13 +72,180 @@ optimize的合并操作是在后台执行的，无法预测具体执行时间点
 
 
 
+# 和SpringBoot 的项目整合
+
+Maven 依赖
+
+```xml
+
+        <dependency>
+            <groupId>ru.yandex.clickhouse</groupId>
+            <artifactId>clickhouse-jdbc</artifactId>
+            <version>0.1.55</version>
+        </dependency>
+
+        <!--mybatis plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+```
+
+application.yml 配置
+
+```yml
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: ru.yandex.clickhouse.ClickHouseDriver
+    url: jdbc:clickhouse://8.140.98.27:8123/default
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+     root: INFO
+
+```
 
 
 
+创建表
+
+```sql
+CREATE TABLE default.visit_stats
+(
+    `product_id` UInt64,
+    `is_new` UInt16,
+    `province` String,
+    `city` String,
+    `pv` UInt32,
+    `visit_time` DateTime
+)
+ENGINE = MergeTree()
+PARTITION BY toYYYYMMDD(visit_time)
+ORDER BY (
+ product_id,
+ is_new,
+ province,
+ city
+ );
+```
+
+插入数据
+
+```sql
+
+INSERT into visit_stats values
+('1','1','广东','广州',14323,'2023-01-01 12:11:13'),
+('1','0','广东','广州',4232,'2023-02-12 16:16:13'),
+('1','1','广东','佛山',54323,'2023-03-06 16:11:13'),
+('1','0','广东','东莞',42341,'2023-03-02 16:12:13'),
+('1','1','广东','梅州',52422,'2023-03-09 12:11:13'),
+
+('2','1','广东','广州',14323,'2021-03-01 12:11:13'),
+('2','0','广东','深圳',425232,'2023-04-12 16:16:13'),
+('2','1','广东','佛山',543323,'2022-06-06 16:11:13'),
+('2','0','广东','东莞',42341,'2021-05-02 16:12:13'),
+('2','1','广东','梅州',52422,'2022-01-09 12:11:13'),
+
+('3','1','北京','北京',13132,'2023-01-01 12:11:13'),
+('3','0','广东','广州',533232,'2022-02-16 16:16:13'),
+('4','1','浙江','杭州',663643,'2023-12-06 12:11:13'),
+('4','0','广东','东莞',4142,'2023-11-02 16:12:13'),
+('5','1','湖南','长沙',52123,'2022-01-09 12:11:13'),
+('4','0','湖南','衡阳',4142,'2024-05-02 16:12:13'),
+('5','1','广东','中山',52123,'2024-01-09 12:11:13'),
+
+('2','1','上海','上海',14323,'2021-03-01 12:11:13'),
+('5','0','浙江','宁波',425232,'2023-04-12 16:16:13'),
+('3','1','广东','佛山',543323,'2022-06-06 16:11:13'),
+('2','0','湖南','长沙',42341,'2021-05-02 16:12:13'),
+('2','1','广东','深圳',52422,'2022-01-09 12:11:13')
+```
 
 
 
+**统计需求**
 
+* 某个商品再时间范围内地区访问分布-城市级别  
+
+```
+select province,city, sum(pv) pv_count  
+from visit_stats where  product_id =1 
+and toYYYYMMDD(visit_time) BETWEEN '20200101' and '20241212' 
+group by province,city order by pv_count desc
+```
+
+* 函数（ClickHouse还有很多SQL函数，我们只讲常用的，其他可以百度【clickhouse函数】或官方文档）
+
+  * 求和
+
+    ```
+    sum(pv) 
+    ```
+
+  * 年格式
+
+    ```
+    select toYear(toDateTime('2024-12-11 11:12:13')) 
+    ```
+
+  * 日期格式化
+
+    ```
+    select toYYYYMMDD(toDateTime('2024-12-11 11:12:13')) 
+    ```
+
+  * 日期时间格式化
+
+    ```
+    select toYYYYMMDDhhmmss(toDateTime('2024-12-11 11:12:13')) 
+    ```
+
+  * 周格式化,1~7，当前时间是本周第几天，下面是周三结果是3，周日结果是7
+
+    ```
+    select toDayOfWeek(toDateTime('2024-12-11 11:12:13')) 
+    ```
+
+  * 小时格式化，提取时间里面的小时，比如 2023-12-29 10:05:10，格式化后是【10】点
+
+    ```
+    select toHour(toDateTime('2024-12-11 11:12:13')) 
+    ```
+
+  * 分钟格式化，提取时间里面的分钟，比如 2023-12-29 10:05:10，格式化后是【5】分钟
+
+    ```sql
+    select toMinute(toDateTime('2024-12-11 11:12:13')) 
+    ```
+
+    
+
+  * 秒格式化，提取时间里面的秒
+
+    ```sql
+    select toSecond(toDateTime('2024-12-11 11:12:13')) 
+    ```
+
+    
+
+  * 获取当前日期时间
+
+    ```sql
+    select now()
+    ```
+
+  * 获取当前日期
+
+    ```sql
+    select today()
+    ```
 
 
 
