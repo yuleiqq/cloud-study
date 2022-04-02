@@ -40,12 +40,3 @@ insert into xdclass_shop.order_merge_tree values
 ```
 
 
-
-
-
-
-
-
-
-
-
