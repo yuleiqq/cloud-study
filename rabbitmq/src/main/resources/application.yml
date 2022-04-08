@@ -1,0 +1,24 @@
+
+server:
+  port: 8080
+
+#rabbit 配置
+spring:
+  rabbitmq:
+    host: 8.140.98.27
+    port: 5672
+    virtual-host: /
+    password: password
+    username: admin
+    #生产者到交换机的消息确认
+    publisher-confirm-type: correlated
+    #交换机到队列的确认
+    publisher-returns: true
+    template:
+      #为true，则交换机处理消息到路由失败，则会返还给生产者
+      mandatory: true
+
+    #消息者，消息的手动确认
+    listener:
+      simple:
+        acknowledge-mode: manual
