@@ -13,7 +13,6 @@ import java.io.IOException;
 @RabbitListener(queues = "order_queue")
 public class OrderMQListener {
 
-    @RabbitHandler
     public void messageHandler(String body, Message message, Channel channel) throws IOException {
 
         long msgTag = message.getMessageProperties().getDeliveryTag();
