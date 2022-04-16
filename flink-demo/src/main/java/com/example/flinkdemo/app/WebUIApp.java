@@ -1,5 +1,6 @@
 package com.example.flinkdemo.app;
 
+import org.apache.flink.api.common.RuntimeExecutionMode;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -21,6 +22,9 @@ public class WebUIApp {
         final StreamExecutionEnvironment env =
                 StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(new Configuration());
         //env.setParallelism(1);
+
+        env.setRuntimeMode(RuntimeExecutionMode.AUTOMATIC);
+
         DataStream<String> stringDataStream = env.socketTextStream("127.0.0.1",8888);
 
         DataStream<String> flatMapDataStream =
