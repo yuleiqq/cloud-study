@@ -164,6 +164,68 @@ build platinum: C_EXECUTABLE_LINKER__platinum_Debug CMakeFiles/platinum.dir/ch3/
   TARGET_FILE = platinum
   TARGET_PDB = platinum.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target talkback
+
+
+#############################################
+# Order-only phony target for talkback
+
+build cmake_object_order_depends_target_talkback: phony || CMakeFiles/talkback.dir
+
+build CMakeFiles/talkback.dir/ch4/talkback.c.o: C_COMPILER__talkback_Debug /Users/yulei/cloud-study/c-project/ch4/talkback.c || cmake_object_order_depends_target_talkback
+  DEP_FILE = CMakeFiles/talkback.dir/ch4/talkback.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/talkback.dir
+  OBJECT_FILE_DIR = CMakeFiles/talkback.dir/ch4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target talkback
+
+
+#############################################
+# Link the executable talkback
+
+build talkback: C_EXECUTABLE_LINKER__talkback_Debug CMakeFiles/talkback.dir/ch4/talkback.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/talkback.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = talkback
+  TARGET_PDB = talkback.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target praise2
+
+
+#############################################
+# Order-only phony target for praise2
+
+build cmake_object_order_depends_target_praise2: phony || CMakeFiles/praise2.dir
+
+build CMakeFiles/praise2.dir/ch4/praise2.c.o: C_COMPILER__praise2_Debug /Users/yulei/cloud-study/c-project/ch4/praise2.c || cmake_object_order_depends_target_praise2
+  DEP_FILE = CMakeFiles/praise2.dir/ch4/praise2.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/praise2.dir
+  OBJECT_FILE_DIR = CMakeFiles/praise2.dir/ch4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target praise2
+
+
+#############################################
+# Link the executable praise2
+
+build praise2: C_EXECUTABLE_LINKER__praise2_Debug CMakeFiles/praise2.dir/ch4/praise2.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/praise2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = praise2
+  TARGET_PDB = praise2.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -198,7 +260,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/c-project/cmake-build-debug
 
-build all: phony c_project first two_func platinum
+build all: phony c_project first two_func platinum talkback praise2
 
 # =============================================================================
 # Built-in targets

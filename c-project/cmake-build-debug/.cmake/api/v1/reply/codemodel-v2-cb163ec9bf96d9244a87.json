@@ -18,7 +18,9 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -36,7 +38,9 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -61,6 +65,20 @@
 					"id" : "platinum::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-platinum-Debug-f0990345eca6df9f632f.json",
 					"name" : "platinum",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "praise2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-praise2-Debug-6633c8bfc7cdd95fd5b7.json",
+					"name" : "praise2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "talkback::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-talkback-Debug-87e29f00e025d9038729.json",
+					"name" : "talkback",
 					"projectIndex" : 0
 				},
 				{
