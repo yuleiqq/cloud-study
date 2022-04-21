@@ -98,6 +98,16 @@
             <artifactId>flink-runtime-web_${scala.version}</artifactId>
             <version>${flink.version}</version>
         </dependency>
+
+
+        <!---redis -->
+        <dependency>
+            <groupId>org.apache.bahir</groupId>
+            <artifactId>flink-connector-redis_2.11</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>

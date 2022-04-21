@@ -14,7 +14,6 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
  **/
 public class Flink05MysqlSinkApp {
 
-
     public static void main(String[] args) throws Exception {
 
         //构建执行任务环境以及任务的启动的入口, 存储全局相关的参数

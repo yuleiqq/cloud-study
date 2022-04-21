@@ -1,0 +1,3 @@
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/c_project.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
