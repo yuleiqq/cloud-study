@@ -1,3 +1,6 @@
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/c_project.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/first.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/two_func.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/platinum.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
