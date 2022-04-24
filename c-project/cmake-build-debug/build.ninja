@@ -226,6 +226,223 @@ build praise2: C_EXECUTABLE_LINKER__praise2_Debug CMakeFiles/praise2.dir/ch4/pra
   TARGET_FILE = praise2
   TARGET_PDB = praise2.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target varwid
+
+
+#############################################
+# Order-only phony target for varwid
+
+build cmake_object_order_depends_target_varwid: phony || CMakeFiles/varwid.dir
+
+build CMakeFiles/varwid.dir/ch4/varwid.c.o: C_COMPILER__varwid_Debug /Users/yulei/cloud-study/c-project/ch4/varwid.c || cmake_object_order_depends_target_varwid
+  DEP_FILE = CMakeFiles/varwid.dir/ch4/varwid.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/varwid.dir
+  OBJECT_FILE_DIR = CMakeFiles/varwid.dir/ch4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target varwid
+
+
+#############################################
+# Link the executable varwid
+
+build varwid: C_EXECUTABLE_LINKER__varwid_Debug CMakeFiles/varwid.dir/ch4/varwid.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/varwid.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = varwid
+  TARGET_PDB = varwid.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target skip
+
+
+#############################################
+# Order-only phony target for skip
+
+build cmake_object_order_depends_target_skip: phony || CMakeFiles/skip.dir
+
+build CMakeFiles/skip.dir/ch4/skip.c.o: C_COMPILER__skip_Debug /Users/yulei/cloud-study/c-project/ch4/skip.c || cmake_object_order_depends_target_skip
+  DEP_FILE = CMakeFiles/skip.dir/ch4/skip.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/skip.dir
+  OBJECT_FILE_DIR = CMakeFiles/skip.dir/ch4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target skip
+
+
+#############################################
+# Link the executable skip
+
+build skip: C_EXECUTABLE_LINKER__skip_Debug CMakeFiles/skip.dir/ch4/skip.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/skip.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = skip
+  TARGET_PDB = skip.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target shoes1
+
+
+#############################################
+# Order-only phony target for shoes1
+
+build cmake_object_order_depends_target_shoes1: phony || CMakeFiles/shoes1.dir
+
+build CMakeFiles/shoes1.dir/ch5/shoes1.c.o: C_COMPILER__shoes1_Debug /Users/yulei/cloud-study/c-project/ch5/shoes1.c || cmake_object_order_depends_target_shoes1
+  DEP_FILE = CMakeFiles/shoes1.dir/ch5/shoes1.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/shoes1.dir
+  OBJECT_FILE_DIR = CMakeFiles/shoes1.dir/ch5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target shoes1
+
+
+#############################################
+# Link the executable shoes1
+
+build shoes1: C_EXECUTABLE_LINKER__shoes1_Debug CMakeFiles/shoes1.dir/ch5/shoes1.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/shoes1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = shoes1
+  TARGET_PDB = shoes1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target squares
+
+
+#############################################
+# Order-only phony target for squares
+
+build cmake_object_order_depends_target_squares: phony || CMakeFiles/squares.dir
+
+build CMakeFiles/squares.dir/ch5/squares.c.o: C_COMPILER__squares_Debug /Users/yulei/cloud-study/c-project/ch5/squares.c || cmake_object_order_depends_target_squares
+  DEP_FILE = CMakeFiles/squares.dir/ch5/squares.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/squares.dir
+  OBJECT_FILE_DIR = CMakeFiles/squares.dir/ch5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target squares
+
+
+#############################################
+# Link the executable squares
+
+build squares: C_EXECUTABLE_LINKER__squares_Debug CMakeFiles/squares.dir/ch5/squares.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/squares.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = squares
+  TARGET_PDB = squares.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pound
+
+
+#############################################
+# Order-only phony target for pound
+
+build cmake_object_order_depends_target_pound: phony || CMakeFiles/pound.dir
+
+build CMakeFiles/pound.dir/ch5/pound.c.o: C_COMPILER__pound_Debug /Users/yulei/cloud-study/c-project/ch5/pound.c || cmake_object_order_depends_target_pound
+  DEP_FILE = CMakeFiles/pound.dir/ch5/pound.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/pound.dir
+  OBJECT_FILE_DIR = CMakeFiles/pound.dir/ch5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pound
+
+
+#############################################
+# Link the executable pound
+
+build pound: C_EXECUTABLE_LINKER__pound_Debug CMakeFiles/pound.dir/ch5/pound.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/pound.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = pound
+  TARGET_PDB = pound.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target echo
+
+
+#############################################
+# Order-only phony target for echo
+
+build cmake_object_order_depends_target_echo: phony || CMakeFiles/echo.dir
+
+build CMakeFiles/echo.dir/ch8/echo.c.o: C_COMPILER__echo_Debug /Users/yulei/cloud-study/c-project/ch8/echo.c || cmake_object_order_depends_target_echo
+  DEP_FILE = CMakeFiles/echo.dir/ch8/echo.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/echo.dir
+  OBJECT_FILE_DIR = CMakeFiles/echo.dir/ch8
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target echo
+
+
+#############################################
+# Link the executable echo
+
+build echo: C_EXECUTABLE_LINKER__echo_Debug CMakeFiles/echo.dir/ch8/echo.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/echo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = echo
+  TARGET_PDB = echo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target echo_eof
+
+
+#############################################
+# Order-only phony target for echo_eof
+
+build cmake_object_order_depends_target_echo_eof: phony || CMakeFiles/echo_eof.dir
+
+build CMakeFiles/echo_eof.dir/ch8/echo_eof.c.o: C_COMPILER__echo_eof_Debug /Users/yulei/cloud-study/c-project/ch8/echo_eof.c || cmake_object_order_depends_target_echo_eof
+  DEP_FILE = CMakeFiles/echo_eof.dir/ch8/echo_eof.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/echo_eof.dir
+  OBJECT_FILE_DIR = CMakeFiles/echo_eof.dir/ch8
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target echo_eof
+
+
+#############################################
+# Link the executable echo_eof
+
+build echo_eof: C_EXECUTABLE_LINKER__echo_eof_Debug CMakeFiles/echo_eof.dir/ch8/echo_eof.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/echo_eof.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = echo_eof
+  TARGET_PDB = echo_eof.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -260,7 +477,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/c-project/cmake-build-debug
 
-build all: phony c_project first two_func platinum talkback praise2
+build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof
 
 # =============================================================================
 # Built-in targets

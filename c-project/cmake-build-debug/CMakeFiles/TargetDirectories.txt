@@ -4,5 +4,12 @@
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/platinum.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/talkback.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/praise2.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/varwid.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/skip.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/shoes1.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/squares.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/pound.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/echo.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/echo_eof.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

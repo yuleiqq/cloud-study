@@ -1,0 +1,18 @@
+//
+// Created by 余雷 on 2022/4/21.
+//
+
+#include "stdio.h"
+
+int main (){
+
+    int num =1;
+    while(num <21){
+
+        printf("%4d  %6d \n", num,num * num);
+        num = num + 1;
+    }
+
+    return 0;
+
+}

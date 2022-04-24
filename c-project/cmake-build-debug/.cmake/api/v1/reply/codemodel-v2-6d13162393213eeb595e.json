@@ -20,7 +20,14 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
 					]
 				}
 			],
@@ -40,7 +47,14 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
 					]
 				}
 			],
@@ -51,6 +65,20 @@
 					"id" : "c_project::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-c_project-Debug-0b2ce7fd0ccac6bcb04a.json",
 					"name" : "c_project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echo-Debug-ce2fd49e81fb08ff64b1.json",
+					"name" : "echo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echo_eof::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echo_eof-Debug-ba70b0d2b6dbc1fb9e86.json",
+					"name" : "echo_eof",
 					"projectIndex" : 0
 				},
 				{
@@ -69,9 +97,37 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "pound::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pound-Debug-0610af58e1d77cf76dca.json",
+					"name" : "pound",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "praise2::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-praise2-Debug-6633c8bfc7cdd95fd5b7.json",
 					"name" : "praise2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "shoes1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-shoes1-Debug-b1700f7175c1f98429c0.json",
+					"name" : "shoes1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "skip::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-skip-Debug-b1d54f4f087539550fa9.json",
+					"name" : "skip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "squares::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-squares-Debug-93cef2134c94923bce2c.json",
+					"name" : "squares",
 					"projectIndex" : 0
 				},
 				{
@@ -86,6 +142,13 @@
 					"id" : "two_func::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-two_func-Debug-4a2443a40c4d6d60d750.json",
 					"name" : "two_func",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "varwid::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-varwid-Debug-cd7f40c01919965402d0.json",
+					"name" : "varwid",
 					"projectIndex" : 0
 				}
 			]
