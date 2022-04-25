@@ -15,5 +15,6 @@
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/lethead2.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/swap1.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/swap3.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/no_data.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

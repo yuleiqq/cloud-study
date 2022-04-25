@@ -567,6 +567,37 @@ build swap3: C_EXECUTABLE_LINKER__swap3_Debug CMakeFiles/swap3.dir/ch9/swap3.c.o
   TARGET_FILE = swap3
   TARGET_PDB = swap3.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target no_data
+
+
+#############################################
+# Order-only phony target for no_data
+
+build cmake_object_order_depends_target_no_data: phony || CMakeFiles/no_data.dir
+
+build CMakeFiles/no_data.dir/ch10/no_data.c.o: C_COMPILER__no_data_Debug /Users/yulei/cloud-study/c-project/ch10/no_data.c || cmake_object_order_depends_target_no_data
+  DEP_FILE = CMakeFiles/no_data.dir/ch10/no_data.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/no_data.dir
+  OBJECT_FILE_DIR = CMakeFiles/no_data.dir/ch10
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target no_data
+
+
+#############################################
+# Link the executable no_data
+
+build no_data: C_EXECUTABLE_LINKER__no_data_Debug CMakeFiles/no_data.dir/ch10/no_data.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/no_data.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = no_data
+  TARGET_PDB = no_data.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -601,7 +632,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/c-project/cmake-build-debug
 
-build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof lethead1 lethead2 swap1 swap3
+build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof lethead1 lethead2 swap1 swap3 no_data
 
 # =============================================================================
 # Built-in targets
