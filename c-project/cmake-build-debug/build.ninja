@@ -443,6 +443,130 @@ build echo_eof: C_EXECUTABLE_LINKER__echo_eof_Debug CMakeFiles/echo_eof.dir/ch8/
   TARGET_FILE = echo_eof
   TARGET_PDB = echo_eof.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target lethead1
+
+
+#############################################
+# Order-only phony target for lethead1
+
+build cmake_object_order_depends_target_lethead1: phony || CMakeFiles/lethead1.dir
+
+build CMakeFiles/lethead1.dir/ch9/lethead1.c.o: C_COMPILER__lethead1_Debug /Users/yulei/cloud-study/c-project/ch9/lethead1.c || cmake_object_order_depends_target_lethead1
+  DEP_FILE = CMakeFiles/lethead1.dir/ch9/lethead1.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/lethead1.dir
+  OBJECT_FILE_DIR = CMakeFiles/lethead1.dir/ch9
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lethead1
+
+
+#############################################
+# Link the executable lethead1
+
+build lethead1: C_EXECUTABLE_LINKER__lethead1_Debug CMakeFiles/lethead1.dir/ch9/lethead1.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/lethead1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lethead1
+  TARGET_PDB = lethead1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lethead2
+
+
+#############################################
+# Order-only phony target for lethead2
+
+build cmake_object_order_depends_target_lethead2: phony || CMakeFiles/lethead2.dir
+
+build CMakeFiles/lethead2.dir/ch9/lethead2.c.o: C_COMPILER__lethead2_Debug /Users/yulei/cloud-study/c-project/ch9/lethead2.c || cmake_object_order_depends_target_lethead2
+  DEP_FILE = CMakeFiles/lethead2.dir/ch9/lethead2.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/lethead2.dir
+  OBJECT_FILE_DIR = CMakeFiles/lethead2.dir/ch9
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lethead2
+
+
+#############################################
+# Link the executable lethead2
+
+build lethead2: C_EXECUTABLE_LINKER__lethead2_Debug CMakeFiles/lethead2.dir/ch9/lethead2.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/lethead2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lethead2
+  TARGET_PDB = lethead2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target swap1
+
+
+#############################################
+# Order-only phony target for swap1
+
+build cmake_object_order_depends_target_swap1: phony || CMakeFiles/swap1.dir
+
+build CMakeFiles/swap1.dir/ch9/swap1.c.o: C_COMPILER__swap1_Debug /Users/yulei/cloud-study/c-project/ch9/swap1.c || cmake_object_order_depends_target_swap1
+  DEP_FILE = CMakeFiles/swap1.dir/ch9/swap1.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/swap1.dir
+  OBJECT_FILE_DIR = CMakeFiles/swap1.dir/ch9
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target swap1
+
+
+#############################################
+# Link the executable swap1
+
+build swap1: C_EXECUTABLE_LINKER__swap1_Debug CMakeFiles/swap1.dir/ch9/swap1.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/swap1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = swap1
+  TARGET_PDB = swap1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target swap3
+
+
+#############################################
+# Order-only phony target for swap3
+
+build cmake_object_order_depends_target_swap3: phony || CMakeFiles/swap3.dir
+
+build CMakeFiles/swap3.dir/ch9/swap3.c.o: C_COMPILER__swap3_Debug /Users/yulei/cloud-study/c-project/ch9/swap3.c || cmake_object_order_depends_target_swap3
+  DEP_FILE = CMakeFiles/swap3.dir/ch9/swap3.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/swap3.dir
+  OBJECT_FILE_DIR = CMakeFiles/swap3.dir/ch9
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target swap3
+
+
+#############################################
+# Link the executable swap3
+
+build swap3: C_EXECUTABLE_LINKER__swap3_Debug CMakeFiles/swap3.dir/ch9/swap3.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/swap3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = swap3
+  TARGET_PDB = swap3.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -477,7 +601,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/c-project/cmake-build-debug
 
-build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof
+build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof lethead1 lethead2 swap1 swap3
 
 # =============================================================================
 # Built-in targets
