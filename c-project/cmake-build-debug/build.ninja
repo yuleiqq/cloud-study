@@ -660,6 +660,99 @@ build designate: C_EXECUTABLE_LINKER__designate_Debug CMakeFiles/designate.dir/c
   TARGET_FILE = designate
   TARGET_PDB = designate.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target pnt_add
+
+
+#############################################
+# Order-only phony target for pnt_add
+
+build cmake_object_order_depends_target_pnt_add: phony || CMakeFiles/pnt_add.dir
+
+build CMakeFiles/pnt_add.dir/ch10/pnt_add.c.o: C_COMPILER__pnt_add_Debug /Users/yulei/cloud-study/c-project/ch10/pnt_add.c || cmake_object_order_depends_target_pnt_add
+  DEP_FILE = CMakeFiles/pnt_add.dir/ch10/pnt_add.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/pnt_add.dir
+  OBJECT_FILE_DIR = CMakeFiles/pnt_add.dir/ch10
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pnt_add
+
+
+#############################################
+# Link the executable pnt_add
+
+build pnt_add: C_EXECUTABLE_LINKER__pnt_add_Debug CMakeFiles/pnt_add.dir/ch10/pnt_add.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/pnt_add.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = pnt_add
+  TARGET_PDB = pnt_add.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sum_arr1
+
+
+#############################################
+# Order-only phony target for sum_arr1
+
+build cmake_object_order_depends_target_sum_arr1: phony || CMakeFiles/sum_arr1.dir
+
+build CMakeFiles/sum_arr1.dir/ch10/sum_arr1.c.o: C_COMPILER__sum_arr1_Debug /Users/yulei/cloud-study/c-project/ch10/sum_arr1.c || cmake_object_order_depends_target_sum_arr1
+  DEP_FILE = CMakeFiles/sum_arr1.dir/ch10/sum_arr1.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/sum_arr1.dir
+  OBJECT_FILE_DIR = CMakeFiles/sum_arr1.dir/ch10
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sum_arr1
+
+
+#############################################
+# Link the executable sum_arr1
+
+build sum_arr1: C_EXECUTABLE_LINKER__sum_arr1_Debug CMakeFiles/sum_arr1.dir/ch10/sum_arr1.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sum_arr1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sum_arr1
+  TARGET_PDB = sum_arr1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sum_arr2
+
+
+#############################################
+# Order-only phony target for sum_arr2
+
+build cmake_object_order_depends_target_sum_arr2: phony || CMakeFiles/sum_arr2.dir
+
+build CMakeFiles/sum_arr2.dir/ch10/sum_arr2.c.o: C_COMPILER__sum_arr2_Debug /Users/yulei/cloud-study/c-project/ch10/sum_arr2.c || cmake_object_order_depends_target_sum_arr2
+  DEP_FILE = CMakeFiles/sum_arr2.dir/ch10/sum_arr2.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/sum_arr2.dir
+  OBJECT_FILE_DIR = CMakeFiles/sum_arr2.dir/ch10
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sum_arr2
+
+
+#############################################
+# Link the executable sum_arr2
+
+build sum_arr2: C_EXECUTABLE_LINKER__sum_arr2_Debug CMakeFiles/sum_arr2.dir/ch10/sum_arr2.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sum_arr2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sum_arr2
+  TARGET_PDB = sum_arr2.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -694,7 +787,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/c-project/cmake-build-debug
 
-build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof lethead1 lethead2 swap1 swap3 no_data test_arrsize designate
+build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof lethead1 lethead2 swap1 swap3 no_data test_arrsize designate pnt_add sum_arr1 sum_arr2
 
 # =============================================================================
 # Built-in targets

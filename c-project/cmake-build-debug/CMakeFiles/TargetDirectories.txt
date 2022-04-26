@@ -18,5 +18,8 @@
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/no_data.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/test_arrsize.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/designate.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/pnt_add.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/sum_arr1.dir
+/Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/sum_arr2.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/yulei/cloud-study/c-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

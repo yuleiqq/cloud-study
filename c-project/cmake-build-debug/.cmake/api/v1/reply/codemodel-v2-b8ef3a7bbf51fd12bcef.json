@@ -34,7 +34,10 @@
 						16,
 						17,
 						18,
-						19
+						19,
+						20,
+						21,
+						22
 					]
 				}
 			],
@@ -68,7 +71,10 @@
 						16,
 						17,
 						18,
-						19
+						19,
+						20,
+						21,
+						22
 					]
 				}
 			],
@@ -139,6 +145,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "pnt_add::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pnt_add-Debug-ef60e2938c6268a4e121.json",
+					"name" : "pnt_add",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "pound::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-pound-Debug-0610af58e1d77cf76dca.json",
 					"name" : "pound",
@@ -170,6 +183,20 @@
 					"id" : "squares::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-squares-Debug-93cef2134c94923bce2c.json",
 					"name" : "squares",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sum_arr1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sum_arr1-Debug-5fc9b6fdaf2d292e37b6.json",
+					"name" : "sum_arr1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sum_arr2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sum_arr2-Debug-0df0e81523282e1f53ca.json",
+					"name" : "sum_arr2",
 					"projectIndex" : 0
 				},
 				{
