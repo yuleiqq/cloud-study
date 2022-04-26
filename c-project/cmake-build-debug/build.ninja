@@ -598,6 +598,68 @@ build no_data: C_EXECUTABLE_LINKER__no_data_Debug CMakeFiles/no_data.dir/ch10/no
   TARGET_FILE = no_data
   TARGET_PDB = no_data.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_arrsize
+
+
+#############################################
+# Order-only phony target for test_arrsize
+
+build cmake_object_order_depends_target_test_arrsize: phony || CMakeFiles/test_arrsize.dir
+
+build CMakeFiles/test_arrsize.dir/ch10/test_arrsize.c.o: C_COMPILER__test_arrsize_Debug /Users/yulei/cloud-study/c-project/ch10/test_arrsize.c || cmake_object_order_depends_target_test_arrsize
+  DEP_FILE = CMakeFiles/test_arrsize.dir/ch10/test_arrsize.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/test_arrsize.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_arrsize.dir/ch10
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_arrsize
+
+
+#############################################
+# Link the executable test_arrsize
+
+build test_arrsize: C_EXECUTABLE_LINKER__test_arrsize_Debug CMakeFiles/test_arrsize.dir/ch10/test_arrsize.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/test_arrsize.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_arrsize
+  TARGET_PDB = test_arrsize.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target designate
+
+
+#############################################
+# Order-only phony target for designate
+
+build cmake_object_order_depends_target_designate: phony || CMakeFiles/designate.dir
+
+build CMakeFiles/designate.dir/ch10/designate.c.o: C_COMPILER__designate_Debug /Users/yulei/cloud-study/c-project/ch10/designate.c || cmake_object_order_depends_target_designate
+  DEP_FILE = CMakeFiles/designate.dir/ch10/designate.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/designate.dir
+  OBJECT_FILE_DIR = CMakeFiles/designate.dir/ch10
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target designate
+
+
+#############################################
+# Link the executable designate
+
+build designate: C_EXECUTABLE_LINKER__designate_Debug CMakeFiles/designate.dir/ch10/designate.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/designate.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = designate
+  TARGET_PDB = designate.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -632,7 +694,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/c-project/cmake-build-debug
 
-build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof lethead1 lethead2 swap1 swap3 no_data
+build all: phony c_project first two_func platinum talkback praise2 varwid skip shoes1 squares pound echo echo_eof lethead1 lethead2 swap1 swap3 no_data test_arrsize designate
 
 # =============================================================================
 # Built-in targets

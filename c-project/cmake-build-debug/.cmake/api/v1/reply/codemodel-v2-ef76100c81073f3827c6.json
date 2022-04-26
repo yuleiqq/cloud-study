@@ -32,7 +32,9 @@
 						14,
 						15,
 						16,
-						17
+						17,
+						18,
+						19
 					]
 				}
 			],
@@ -64,7 +66,9 @@
 						14,
 						15,
 						16,
-						17
+						17,
+						18,
+						19
 					]
 				}
 			],
@@ -75,6 +79,13 @@
 					"id" : "c_project::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-c_project-Debug-0b2ce7fd0ccac6bcb04a.json",
 					"name" : "c_project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "designate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-designate-Debug-8b36dc69e2a6b501f721.json",
+					"name" : "designate",
 					"projectIndex" : 0
 				},
 				{
@@ -180,6 +191,13 @@
 					"id" : "talkback::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-talkback-Debug-87e29f00e025d9038729.json",
 					"name" : "talkback",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_arrsize::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_arrsize-Debug-1c08efd3121d074ef8b3.json",
+					"name" : "test_arrsize",
 					"projectIndex" : 0
 				},
 				{
