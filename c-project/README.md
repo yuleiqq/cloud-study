@@ -128,5 +128,92 @@ const char * head = "I love T"
 
 动态分配的内存在调用malloc()  或相关函数时存在，在调用free() 后释放。 这部分的内存由程序员管理，而不是一套规则。 所以内存块可以在一个函数中创建，在另一个函数中销毁。 
 
+# const 修饰符
+
+```c
+    int arr[10];
+    // pf 指向一个float 类型的const 值.  pf 指向的值不能被改变, 但是pf本身的值可以被改变
+    const float  *  pf ;  //  等于 float  const * pf;
+    //  *pf =20;  这样是错误的
+
+    //创建的pt本身的值不能更改. pt 必须指向同一个地址，但是它所指向的值可以改变
+    float  * const pt ;  // pt 是一个const 指针
+```
+
+把  const 放在类型名之后、星号(*) 之前，说明该指针不能用于改变它所指向的值。
+
+简而言之，const 放在 * 左侧任意位置，限定了指针指向的数据不能改变； const 放在 星号(*)的右侧， 限定了指针本身不能改变。
+
+
+
+# 结构体- struct
+
+## 定义结构
+
+两种定义方式:
+
+```c
+#第一种
+struct book {
+  char title[2];
+  char author[10];
+  float value;
+}
+struct book library;
+
+#第二种
+struct book {
+  char title[2];
+  char author[10];
+  float value;
+} library   # 声明的左右花括号后跟变量名
+```
+
+换言之，声明结构的过程 和定义结构变量的过程可以合成一个步骤。
+
+如下所示： 组合后的结构声明和结构变量定义不需要使用结构标记: 
+
+```c++
+struct { /* 无结构标记 */
+  char title[2];
+  char author[10];
+  float value;
+} library  
+```
+
+如果打算多次使用结构模板，就要使用带标记的形式； 或者，使用 typedef 。
+
+
+
+## 初始化结构
+
+```c
+struct book library  ={
+  "Java 入门到精通",
+  "Tom",
+  1.95
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
