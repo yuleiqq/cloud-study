@@ -46,11 +46,10 @@ void RCR (int R[], int n , int p){
     }
 }
 
+//准备数据
 int main (){
     int L,i;
     int R[N], n;
-
-
 
 
 }
