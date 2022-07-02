@@ -15,23 +15,22 @@ import java.util.*;
  * @Version 1.0
  **/
 
-public class VideoOrderSource extends RichParallelSourceFunction<VideoOrder> {
+public class VideoOrderSourceV2 extends RichParallelSourceFunction<VideoOrder> {
 
 
     private volatile Boolean flag = true;
 
     private Random random = new Random();
 
-    private static List<String> list = new ArrayList<>();
+    private static List<VideoOrder> list = new ArrayList<>();
     static {
-        list.add("spring boot2.x课程");
-        list.add("微服务SpringCloud课程");
-        list.add("RabbitMQ消息队列");
-        list.add("Kafka课程");
-        list.add("小滴课堂面试专题第一季");
-        list.add("Flink流式技术课程");
-        list.add("工业级微服务项目大课训练营");
-        list.add("Linux课程");
+        list.add(new VideoOrder("","java",10,0,null));
+        list.add(new VideoOrder("","spring boot",15,0,null));
+        list.add(new VideoOrder("","springc loud",20,0,null));
+        list.add(new VideoOrder("","flink",45,0,null));
+        list.add(new VideoOrder("","面试专题第一季",50,0,null));
+        list.add(new VideoOrder("","项目大课",1,0,null));
+        list.add(new VideoOrder("","kafka",300,0,null));
     }
 
 
@@ -67,10 +66,11 @@ public class VideoOrderSource extends RichParallelSourceFunction<VideoOrder> {
             Thread.sleep(1000);
             String id = UUID.randomUUID().toString();
             int userId = random.nextInt(10);
-            int money = random.nextInt(100);
             int videoNum = random.nextInt(list.size());
-            String title = list.get(videoNum);
-            VideoOrder videoOrder = new VideoOrder(id,title,money,userId,new Date());
+            VideoOrder videoOrder = list.get(videoNum);
+            videoOrder.setUserId(userId);
+            videoOrder.setCreateTime(new Date());
+            videoOrder.setTradeNo(id);
 
             ctx.collect(videoOrder);
         }

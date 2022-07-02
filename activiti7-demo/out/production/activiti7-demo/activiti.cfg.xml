@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--默认方式下， bean 的id 固定为processEngineConfiguration -->
+    <bean id ="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+
+         <!--配置数据库的相关信息-->
+        <property name="jdbcDriver" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///activiti"/>
+        <property name="jdbcUsername" value="root"/>
+        <property name="jdbcPassword" value="12345678"/>
+        <property name="databaseSchemaUpdate" value="true"/>
+
+    </bean>
+
+
+</beans>

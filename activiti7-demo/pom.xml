@@ -2,45 +2,107 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.8</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>a</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>a</name>
+	<artifactId>activiti</artifactId>
+	<version>1.0</version>
+	<name>activiti-demo</name>
 	<description>a</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<activiti.version>7.1.0.M6</activiti.version>
+		<log4j.version>1.2.12</log4j.version>
+		<sl4j.version>1.6.6</sl4j.version>
 	</properties>
 	<dependencies>
+		<!--activiti 相关-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-engine</artifactId>
+			<version>${activiti.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-spring</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<!--bpmn 模型处理-->
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-bpmn-model</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+		<!--bpmn 模型转换-->
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-bpmn-converter</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<!--bpmn json 转换-->
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-json-converter</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<!--bpmn 布局-->
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-bpmn-layout</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<!--activiti 云支持-->
+		<dependency>
+			<groupId>org.activiti.cloud.rb</groupId>
+			<artifactId>activiti-cloud-services-api</artifactId>
+			<version>${activiti.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.47</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.5.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${sl4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${sl4j.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+		</dependency>
+
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>

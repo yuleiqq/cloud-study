@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+  <process id="bpm" name="bpm" isExecutable="true">
+    <startEvent id="sid-cbc22d44-9027-4c99-aca9-bcf70d958e73" name="流程开始"/>
+    <userTask id="sid-8409fd89-e25b-40dc-97a5-0a20d550d701" name="创建出差审批"/>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_bpm">
+    <bpmndi:BPMNPlane bpmnElement="bpm" id="BPMNPlane_bpm">
+      <bpmndi:BPMNShape id="shape-c86559e9-3936-4922-90b1-442aa0a78a7b" bpmnElement="sid-cbc22d44-9027-4c99-aca9-bcf70d958e73">
+        <omgdc:Bounds x="-271.75" y="-60.0" width="30.0" height="30.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape-009daeb8-06a5-474f-9297-cafe8f91d28d" bpmnElement="sid-8409fd89-e25b-40dc-97a5-0a20d550d701">
+        <omgdc:Bounds x="-158.25" y="-61.75" width="60.5" height="33.5"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
