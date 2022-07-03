@@ -1,6 +1,7 @@
 package com.example.flinkdemo.source;
 
 import com.example.flinkdemo.model.VideoOrder;
+import com.example.flinkdemo.util.TimeUtil;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction;
 
@@ -26,11 +27,11 @@ public class VideoOrderSourceV2 extends RichParallelSourceFunction<VideoOrder> {
     static {
         list.add(new VideoOrder("","java",10,0,null));
         list.add(new VideoOrder("","spring boot",15,0,null));
-        list.add(new VideoOrder("","springc loud",20,0,null));
-        list.add(new VideoOrder("","flink",45,0,null));
-        list.add(new VideoOrder("","面试专题第一季",50,0,null));
-        list.add(new VideoOrder("","项目大课",1,0,null));
-        list.add(new VideoOrder("","kafka",300,0,null));
+//        list.add(new VideoOrder("","springc loud",20,0,null));
+//        list.add(new VideoOrder("","flink",45,0,null));
+//        list.add(new VideoOrder("","面试专题第一季",50,0,null));
+//        list.add(new VideoOrder("","项目大课",1,0,null));
+//        list.add(new VideoOrder("","kafka",300,0,null));
     }
 
 
@@ -63,15 +64,15 @@ public class VideoOrderSourceV2 extends RichParallelSourceFunction<VideoOrder> {
     public void run(SourceContext<VideoOrder> ctx) throws Exception {
 
         while (flag){
-            Thread.sleep(1000);
-            String id = UUID.randomUUID().toString();
+//            Thread.sleep(1000);
+            String id = UUID.randomUUID().toString().substring(30);
             int userId = random.nextInt(10);
             int videoNum = random.nextInt(list.size());
             VideoOrder videoOrder = list.get(videoNum);
             videoOrder.setUserId(userId);
             videoOrder.setCreateTime(new Date());
             videoOrder.setTradeNo(id);
-
+            System.out.println("产生:"+videoOrder.getTitle()+"，价格:"+videoOrder.getMoney()+", 时间:"+ TimeUtil.format(videoOrder.getCreateTime()));
             ctx.collect(videoOrder);
         }
 
