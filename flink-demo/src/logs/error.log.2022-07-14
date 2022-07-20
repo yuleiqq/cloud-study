@@ -1,0 +1,135 @@
+2022-07-14 17:41:22  [ SourceCoordinator-Source: MySQL Source:3949 ] - [ ERROR ]  
+Uncaught exception in the SplitEnumerator for Source Source: MySQL Source while starting the SplitEnumerator.. Triggering job failover.
+java.lang.NoClassDefFoundError: org/apache/flink/shaded/guava18/com/google/common/util/concurrent/ThreadFactoryBuilder
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.startAsynchronouslySplit(MySqlSnapshotSplitAssigner.java:195)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.open(MySqlSnapshotSplitAssigner.java:163)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlHybridSplitAssigner.open(MySqlHybridSplitAssigner.java:95)
+	at com.ververica.cdc.connectors.mysql.source.enumerator.MySqlSourceEnumerator.start(MySqlSourceEnumerator.java:101)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$start$0(SourceCoordinator.java:136)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$runInEventLoop$8(SourceCoordinator.java:329)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.apache.flink.shaded.guava18.com.google.common.util.concurrent.ThreadFactoryBuilder
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 13 more
+2022-07-14 17:42:47  [ SourceCoordinator-Source: MySQL Source:3878 ] - [ ERROR ]  
+Uncaught exception in the SplitEnumerator for Source Source: MySQL Source while starting the SplitEnumerator.. Triggering job failover.
+java.lang.NoClassDefFoundError: org/apache/flink/shaded/guava18/com/google/common/util/concurrent/ThreadFactoryBuilder
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.startAsynchronouslySplit(MySqlSnapshotSplitAssigner.java:195)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.open(MySqlSnapshotSplitAssigner.java:163)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlHybridSplitAssigner.open(MySqlHybridSplitAssigner.java:95)
+	at com.ververica.cdc.connectors.mysql.source.enumerator.MySqlSourceEnumerator.start(MySqlSourceEnumerator.java:101)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$start$0(SourceCoordinator.java:136)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$runInEventLoop$8(SourceCoordinator.java:329)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.apache.flink.shaded.guava18.com.google.common.util.concurrent.ThreadFactoryBuilder
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 13 more
+2022-07-14 17:44:04  [ SourceCoordinator-Source: MySQL Source:4012 ] - [ ERROR ]  
+Uncaught exception in the SplitEnumerator for Source Source: MySQL Source while starting the SplitEnumerator.. Triggering job failover.
+java.lang.NoClassDefFoundError: org/apache/flink/shaded/guava18/com/google/common/util/concurrent/ThreadFactoryBuilder
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.startAsynchronouslySplit(MySqlSnapshotSplitAssigner.java:195)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.open(MySqlSnapshotSplitAssigner.java:163)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlHybridSplitAssigner.open(MySqlHybridSplitAssigner.java:95)
+	at com.ververica.cdc.connectors.mysql.source.enumerator.MySqlSourceEnumerator.start(MySqlSourceEnumerator.java:101)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$start$0(SourceCoordinator.java:136)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$runInEventLoop$8(SourceCoordinator.java:329)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.apache.flink.shaded.guava18.com.google.common.util.concurrent.ThreadFactoryBuilder
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 13 more
+2022-07-14 17:45:57  [ SourceCoordinator-Source: MySQL Source:3925 ] - [ ERROR ]  
+Uncaught exception in the SplitEnumerator for Source Source: MySQL Source while starting the SplitEnumerator.. Triggering job failover.
+java.lang.NoClassDefFoundError: org/apache/flink/shaded/guava18/com/google/common/util/concurrent/ThreadFactoryBuilder
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.startAsynchronouslySplit(MySqlSnapshotSplitAssigner.java:195)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.open(MySqlSnapshotSplitAssigner.java:163)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlHybridSplitAssigner.open(MySqlHybridSplitAssigner.java:95)
+	at com.ververica.cdc.connectors.mysql.source.enumerator.MySqlSourceEnumerator.start(MySqlSourceEnumerator.java:101)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$start$0(SourceCoordinator.java:136)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$runInEventLoop$8(SourceCoordinator.java:329)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.apache.flink.shaded.guava18.com.google.common.util.concurrent.ThreadFactoryBuilder
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 13 more
+2022-07-14 17:50:37  [ SourceCoordinator-Source: MySQL Source:3896 ] - [ ERROR ]  
+Uncaught exception in the SplitEnumerator for Source Source: MySQL Source while starting the SplitEnumerator.. Triggering job failover.
+java.lang.NoClassDefFoundError: org/apache/flink/shaded/guava18/com/google/common/util/concurrent/ThreadFactoryBuilder
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.startAsynchronouslySplit(MySqlSnapshotSplitAssigner.java:195)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlSnapshotSplitAssigner.open(MySqlSnapshotSplitAssigner.java:163)
+	at com.ververica.cdc.connectors.mysql.source.assigners.MySqlHybridSplitAssigner.open(MySqlHybridSplitAssigner.java:95)
+	at com.ververica.cdc.connectors.mysql.source.enumerator.MySqlSourceEnumerator.start(MySqlSourceEnumerator.java:101)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$start$0(SourceCoordinator.java:136)
+	at org.apache.flink.runtime.source.coordinator.SourceCoordinator.lambda$runInEventLoop$8(SourceCoordinator.java:329)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.apache.flink.shaded.guava18.com.google.common.util.concurrent.ThreadFactoryBuilder
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 13 more
+2022-07-14 17:54:01  [ Source Data Fetcher for Source: MySQL Source (3/4)#0:5038 ] - [ ERROR ]  
+Received uncaught exception.
+java.lang.NoSuchMethodError: com.mysql.cj.CharsetMapping.getJavaEncodingForMysqlCharset(Ljava/lang/String;)Ljava/lang/String;
+	at io.debezium.connector.mysql.MySqlValueConverters.charsetFor(MySqlValueConverters.java:331)
+	at io.debezium.connector.mysql.MySqlValueConverters.converter(MySqlValueConverters.java:298)
+	at io.debezium.relational.TableSchemaBuilder.createValueConverterFor(TableSchemaBuilder.java:400)
+	at io.debezium.relational.TableSchemaBuilder.convertersForColumns(TableSchemaBuilder.java:321)
+	at io.debezium.relational.TableSchemaBuilder.createValueGenerator(TableSchemaBuilder.java:246)
+	at io.debezium.relational.TableSchemaBuilder.create(TableSchemaBuilder.java:138)
+	at io.debezium.relational.RelationalDatabaseSchema.buildAndRegisterSchema(RelationalDatabaseSchema.java:130)
+	at io.debezium.relational.HistorizedRelationalDatabaseSchema.recover(HistorizedRelationalDatabaseSchema.java:52)
+	at com.ververica.cdc.connectors.mysql.debezium.task.context.StatefulTaskContext.validateAndLoadDatabaseHistory(StatefulTaskContext.java:163)
+	at com.ververica.cdc.connectors.mysql.debezium.task.context.StatefulTaskContext.configure(StatefulTaskContext.java:114)
+	at com.ververica.cdc.connectors.mysql.debezium.reader.SnapshotSplitReader.submitSplit(SnapshotSplitReader.java:93)
+	at com.ververica.cdc.connectors.mysql.debezium.reader.SnapshotSplitReader.submitSplit(SnapshotSplitReader.java:64)
+	at com.ververica.cdc.connectors.mysql.source.reader.MySqlSplitReader.checkSplitOrStartNext(MySqlSplitReader.java:163)
+	at com.ververica.cdc.connectors.mysql.source.reader.MySqlSplitReader.fetch(MySqlSplitReader.java:73)
+	at org.apache.flink.connector.base.source.reader.fetcher.FetchTask.run(FetchTask.java:56)
+	at org.apache.flink.connector.base.source.reader.fetcher.SplitFetcher.runOnce(SplitFetcher.java:140)
+	at org.apache.flink.connector.base.source.reader.fetcher.SplitFetcher.run(SplitFetcher.java:103)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

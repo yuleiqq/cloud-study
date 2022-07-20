@@ -1,31 +1,23 @@
 package net.xdclass.xdclasskafka;
 
 import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.clients.producer.internals.FutureRecordMetadata;
 import org.junit.jupiter.api.Test;
 
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-/**
- * 小滴课堂,愿景：让技术不再难学
- *
- * @Description
- * @Author 二当家小D
- * @Remark 有问题直接联系我，源码-笔记-技术交流群
- * @Version 1.0
- **/
 
 
 public class KafkaProducerTest {
 
-    private static final String TOPIC_NAME = "xdclass-sp-topic-test";
+    private static final String TOPIC_NAME = "t1";
 
     public static Properties getProperties(){
+
         Properties props = new Properties();
 
-        props.put("bootstrap.servers", "8.140.98.27:9092");
+        props.put("bootstrap.servers", "192.168.61.36:9092,192.168.61.37:9092,192.168.61.38:9092");
         //props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "112.74.55.160:9092");
 
         // 当producer向leader发送数据时，可以通过request.required.acks参数来设置数据可靠性的级别,分别是0, 1，all。
@@ -96,14 +88,11 @@ public class KafkaProducerTest {
         Producer<String,String> producer = new KafkaProducer<>(properties);
 
         for(int i=0;i<3 ;i++){
-            Future<RecordMetadata> future = producer.send(new ProducerRecord<>(TOPIC_NAME,"xdclass-key"+i, "xdclass-value"+i));
+            Future<RecordMetadata> future = producer.send(new ProducerRecord<>(TOPIC_NAME,"test-key"+i, "test-value"+i));
 
             try {
-
                 //不关心结果则不用写这些内容
-
                 RecordMetadata recordMetadata =  future.get();
-
                 // topic - 分区编号@offset
                 System.out.println("发送状态："+recordMetadata.toString());
 
