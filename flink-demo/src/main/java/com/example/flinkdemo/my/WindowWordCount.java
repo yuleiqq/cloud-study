@@ -23,7 +23,8 @@ public class WindowWordCount {
     public static void main(String[] args) throws Exception {
 
 
-        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        //LocalStreamEnvironment 在创建它的同一个 JVM 进程中启动 Flink 系统。如果你从 IDE 启动 LocalEnvironment，则可以在代码中设置断点并轻松调试程序。
+        StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironment();
 
         DataStream<Tuple2<String, Integer>> dataStream = env.socketTextStream("", 9999)
                 .flatMap(new FlatMapFunction<String, Tuple2<String, Integer>>() {
