@@ -22,7 +22,7 @@ public class Flink01App
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
         //设置并行度
-        env.setParallelism(1 );
+        env.setParallelism(1);
 
         //相同类型元素的数据流 source
         DataStream<String> stringDS = env.fromElements("java,SpringBoot", "spring cloud,redis", "kafka");
