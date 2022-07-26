@@ -25,7 +25,7 @@ public class WebUIApp {
 
         env.setRuntimeMode(RuntimeExecutionMode.AUTOMATIC);
 
-        DataStream<String> stringDataStream = env.socketTextStream("127.0.0.1",8888);
+        DataStream<String> stringDataStream = env.socketTextStream("127.0.0.1",9999);
 
         DataStream<String> flatMapDataStream =
                 stringDataStream.flatMap(new FlatMapFunction<String, String>() {

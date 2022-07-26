@@ -52,6 +52,7 @@ public class Flink17ProcessWindowApp {
 
         SingleOutputStreamOperator<VideoOrder> process = keyByDS
                 .window(TumblingProcessingTimeWindows.of(Time.minutes(1)))
+                //全窗口聚合函数
                 .process(new ProcessWindowFunction<VideoOrder, VideoOrder, String, TimeWindow>() {
                     @Override
                     public void process(String key, Context context, Iterable<VideoOrder> elements, Collector<VideoOrder> out) throws Exception {

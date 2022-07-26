@@ -36,7 +36,7 @@ public class Flink14TumblingWindowApp {
         //构建执行任务环境以及任务的启动的入口, 存储全局相关的参数
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        env.setRuntimeMode(RuntimeExecutionMode.AUTOMATIC);
+        env.setRuntimeMode(RuntimeExecutionMode.STREAMING);
         env.setParallelism(1);
 
         //数据源 source
@@ -50,7 +50,7 @@ public class Flink14TumblingWindowApp {
         });
 
         //先 key by, 然后 window  ， 窗口分配器,  最后聚合窗口内的数据.
-        DataStream<VideoOrder> sumDS = keyByDS.window(TumblingProcessingTimeWindows.of(Time.minutes(5))).sum("money");
+        DataStream<VideoOrder> sumDS = keyByDS.window(TumblingProcessingTimeWindows.of(Time.seconds(5))).sum("money");
 
         sumDS.print();
 

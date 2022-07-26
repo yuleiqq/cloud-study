@@ -21,7 +21,7 @@ import java.util.List;
 /**
  *
  *
- * 时间 左臂右开
+ * 时间 左闭右开
  **/
 
 public class Flink18WatermarkWindowApp {
@@ -40,7 +40,7 @@ public class Flink18WatermarkWindowApp {
         env.setParallelism(1);
 
         //java,2022-11-11 09-10-10,15
-        DataStream<String> ds = env.socketTextStream("127.0.0.1", 8888);
+        DataStream<String> ds = env.socketTextStream("127.0.0.1", 9999);
 
         SingleOutputStreamOperator<Tuple3<String, String, Integer>> flatMapDS = ds.flatMap(new FlatMapFunction<String, Tuple3<String, String, Integer>>() {
             @Override
@@ -52,14 +52,14 @@ public class Flink18WatermarkWindowApp {
         });
 
         //指定watermark
-        SingleOutputStreamOperator<Tuple3<String, String, Integer>> watermarkDS = flatMapDS.assignTimestampsAndWatermarks(WatermarkStrategy
+        DataStream<Tuple3<String, String, Integer>> watermarkDS = flatMapDS.assignTimestampsAndWatermarks(WatermarkStrategy
                 //指定允许乱序延迟的最大时间 3 秒
                 .<Tuple3<String, String, Integer>>forBoundedOutOfOrderness(Duration.ofSeconds(3))
                 //指定POJO事件时间列，毫秒
                 .withTimestampAssigner((event, timestamp) -> TimeUtil.strToDate(event.f1).getTime()));
 
         //分组 开窗
-        SingleOutputStreamOperator<String> sumDS = watermarkDS.keyBy(new KeySelector<Tuple3<String, String, Integer>, String>() {
+        DataStream<String> sumDS = watermarkDS.keyBy(new KeySelector<Tuple3<String, String, Integer>, String>() {
             @Override
             public String getKey(Tuple3<String, String, Integer> value) throws Exception {
                 return value.f0;
