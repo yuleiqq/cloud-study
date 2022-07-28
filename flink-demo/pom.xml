@@ -136,6 +136,11 @@
 
         <!--CDC end-->
 
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka_${scala.version}</artifactId>
+            <version>1.13.6</version>
+        </dependency>
 
     </dependencies>
 
