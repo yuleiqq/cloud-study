@@ -20,12 +20,12 @@ public class FlinkCdcDemo1 {
         env.setParallelism(1);
 
         MySqlSource<String> mySqlSource = MySqlSource.<String>builder()
-                .hostname("node14")
+                .hostname("localhost")
                 .port(3306)
                 .databaseList("testdb") // set captured database
                 .tableList("testdb.student") // set captured table
                 .username("root")
-                .password("Ddos-1234")
+                .password("12345678")
                 .startupOptions(StartupOptions.latest())
                 .deserializer(new JsonDebeziumDeserializationSchema()) // converts SourceRecord to JSON String
                 .build();
