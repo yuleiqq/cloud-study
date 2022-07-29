@@ -17,7 +17,6 @@ import java.util.Properties;
  **/
 public class FlinkKafkaDemo {
 
-
     public static void main(String[] args) throws Exception {
 
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

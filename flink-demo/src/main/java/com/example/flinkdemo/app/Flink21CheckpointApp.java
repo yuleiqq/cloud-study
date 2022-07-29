@@ -1,5 +1,8 @@
 package com.example.flinkdemo.app;
 import org.apache.flink.api.common.restartstrategy.RestartStrategies;
+import org.apache.flink.runtime.state.CheckpointStorage;
+import org.apache.flink.runtime.state.hashmap.HashMapStateBackend;
+import org.apache.flink.runtime.state.storage.FileSystemCheckpointStorage;
 import org.apache.flink.streaming.api.CheckpointingMode;
 import org.apache.flink.streaming.api.environment.CheckpointConfig;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -19,6 +22,11 @@ public class Flink21CheckpointApp {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
         env.setParallelism(1);
+
+
+        env.setStateBackend(new HashMapStateBackend());
+        env.getCheckpointConfig
+
 
         //两个检查点之间间隔时间，默认是0,单位毫秒
         env.getCheckpointConfig().setMinPauseBetweenCheckpoints(500);
@@ -42,10 +50,8 @@ public class Flink21CheckpointApp {
         //设置同一时刻有多少个checkpoint可以同时执行，默认为1就行，以避免占用太多正常数据处理资源
         env.getCheckpointConfig().setMaxConcurrentCheckpoints(1);
 
-
         //设置了重启策略, 作业在失败后能自动恢复,失败后最多重启3次，每次重启间隔10s
         env.setRestartStrategy(RestartStrategies.fixedDelayRestart(3, 10000));
-
 
         env.execute("watermark job");
 
