@@ -25,8 +25,6 @@ public class Flink21CheckpointApp {
 
 
         env.setStateBackend(new HashMapStateBackend());
-        env.getCheckpointConfig
-
 
         //两个检查点之间间隔时间，默认是0,单位毫秒
         env.getCheckpointConfig().setMinPauseBetweenCheckpoints(500);
