@@ -7,6 +7,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.concurrent.Executor;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author: yulei
@@ -22,9 +23,16 @@ public class ThreadConfig implements AsyncConfigurer {
     @Override
     public Executor getAsyncExecutor() {
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
-        taskExecutor.setCorePoolSize(4);
+        taskExecutor.setCorePoolSize(20);
         taskExecutor.setMaxPoolSize(20);
-        taskExecutor.setQueueCapacity(30);
+        taskExecutor.setQueueCapacity(10000);
+        //设定线程名的前缀
+        taskExecutor.setThreadNamePrefix("bill-thread");
+
+        //等待所有任务结束后再关闭线程池
+        taskExecutor.setWaitForTasksToCompleteOnShutdown(true);
+
+        taskExecutor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         taskExecutor.initialize();
         return taskExecutor;
     }
