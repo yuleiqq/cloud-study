@@ -3,7 +3,7 @@ package com.yulei.flowable.test;
 import org.apache.ibatis.annotations.Param;
 import org.flowable.engine.*;
 import org.flowable.engine.history.HistoricActivityInstance;
-import org.flowable.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration;
+import org.flowable.engine.impl.cfg.StandaloneProcessEngineConfiguration;
 import org.flowable.engine.repository.Deployment;
 import org.flowable.engine.repository.ProcessDefinition;
 import org.flowable.task.api.Task;
@@ -31,7 +31,7 @@ public class FlowableTest {
     @Before
     public void before(){
 
-        configuration =  new StandaloneInMemProcessEngineConfiguration();
+        configuration =  new StandaloneProcessEngineConfiguration();
         //配置相关数据库的连接信息
         configuration.setJdbcDriver("com.mysql.cj.jdbc.Driver");
         configuration.setJdbcUsername("root");
@@ -61,6 +61,7 @@ public class FlowableTest {
 
          System.out.println("deployment.id = " + deployment.getId());
          System.out.println("deployment.getName() = " + deployment.getName());
+
 
      }
     /**
@@ -128,7 +129,6 @@ public class FlowableTest {
         for (int i=0; i<tasks.size(); i++) {
             System.out.println((i+1) + ") " + tasks.get(i).getName()+", 任务ID: "+ tasks.get(i).getId());
         }
-
 
         Scanner scanner= new Scanner(System.in);
 
