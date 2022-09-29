@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../js/vue.js"></script>
+    <style>
+
+        .bg{
+            background-color:  red;
+        }
+
+        .bg_b {
+            background-color: blue;
+        }
+        .fs {
+            font-size: 50px;
+        }
+        .fc {
+            color: green
+        }
+
+    </style>
+</head>
+<body>
+        <div id="app">
+             <div :class="list" @click="change">{{name}}</div>
+             <h1 v-show="1==2">ssss</h1>
+        </div>
+
+        <script>
+                new Vue({
+                    el: "#app",
+                    data: { 
+                        name:"小弟",
+                        obj: { bg_b: true, fs: true},
+                        list: ["bg","fc","fs"]
+                    },
+                    methods: {
+                        change(){
+                            this.bg_red ='bg_blue'
+                        }
+                    },
+                });
+        </script>
+
+</body>
+</html>

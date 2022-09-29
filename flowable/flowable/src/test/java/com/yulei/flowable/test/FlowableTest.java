@@ -6,6 +6,7 @@ import org.flowable.engine.history.HistoricActivityInstance;
 import org.flowable.engine.impl.cfg.StandaloneProcessEngineConfiguration;
 import org.flowable.engine.repository.Deployment;
 import org.flowable.engine.repository.ProcessDefinition;
+import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.task.api.Task;
 import org.junit.Before;
 import org.junit.Test;
@@ -48,7 +49,7 @@ public class FlowableTest {
     /**
      * 部署
      *  deployment.id = 27501
-     * deployment.getName() = 个性化请假流程
+     *  deployment.getName() = 个性化请假流程
      */
     @Test
      public void deploy(){
@@ -104,7 +105,12 @@ public class FlowableTest {
         variables.put("nrOfHolidays", nrOfHolidays);
         variables.put("description", description);
 
-        runtimeService.startProcessInstanceByKey("holidayRequest",variables);
+        //启动流程实例
+        ProcessInstance holidayRequest = runtimeService.startProcessInstanceByKey("holidayRequest", variables);
+
+        //获取流程实例的ID
+        holidayRequest.getProcessInstanceId();
+
 
     }
 

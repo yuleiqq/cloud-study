@@ -1,0 +1,14 @@
+spring:
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.61.49:3306/flowdb?characterEncoding=UTF-8&nullCatalogMeansCurrent=true
+      username: root
+      password: Ddos-1234
+
+management:
+   endpoint:
+      flowable:
+         enabled: true
+
+
+
