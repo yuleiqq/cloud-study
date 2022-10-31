@@ -1,0 +1,27 @@
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
+      first-name: Demo
+    filter:
+      create: All tasks
+    database:
+      type: mysql
+      schema-update: true
+
+    # 取消自动部署
+    auto-deployment-enabled: false
+    #id 生成规则
+    id-generator: simple
+    # 历史记录级别
+    history-level: full
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345678
+    url: jdbc:mysql://127.0.0.1:3306/camunda666?serverTimezone=Asia/Shanghai
+
+

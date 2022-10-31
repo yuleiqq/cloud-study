@@ -1,7 +1,6 @@
 //
 // Created by 余雷 on 2022/4/21.
 //
-
 #include "string.h"
 #include "stdio.h"
 #define  PRAISE "You"

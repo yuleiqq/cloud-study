@@ -10,6 +10,7 @@ int main (){
 
     while ((ch=getchar()) != EOF)
         putchar(ch);
+    printf("%d",12);
 
     return  0;
 

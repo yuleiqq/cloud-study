@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "label": "name",
+      "type": "textfield",
+      "id": "Field_1ieboxe",
+      "key": "name",
+      "disabled": false,
+      "validate": {
+        "required": true,
+        "minLength": 1,
+        "maxLength": 10
+      }
+    },
+    {
+      "label": "Checkbox",
+      "type": "checkbox",
+      "id": "Field_1xa67u3",
+      "key": "check",
+      "defaultValue": true
+    }
+  ],
+  "type": "default",
+  "id": "user1-form",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.3.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

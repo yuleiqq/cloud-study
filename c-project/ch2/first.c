@@ -21,7 +21,6 @@
 
     printf("My favorite number is %d  because  it is  first. \n ", num);
 
-
     /**
      * 如果遗漏main()函数的return 语句，程序在运行至最外面的花括号时会返回0。因此可以省略
      *  main 函数的return 语句。但是不要在其它有返回值的函数中漏掉它。

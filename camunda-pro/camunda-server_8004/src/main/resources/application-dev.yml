@@ -1,0 +1,21 @@
+camunda.bpm:
+  admin-user:
+    id: demo
+    password: demo
+    firstName: Demo
+  filter:
+    create: All tasks
+#  auto-deployment-enabled: false
+spring:
+  application:
+    name: camundaServer
+  datasource:
+    username: postgres
+    password: "Tracis@28"
+    url: jdbc:postgresql://192.168.115.130:5432/camunda?currentSchema=public
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 9
