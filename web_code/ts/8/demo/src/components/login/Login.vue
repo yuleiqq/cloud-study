@@ -36,6 +36,7 @@
     </div>
 </template>
 <script lang="ts">
+import { useWindowSize } from '@vant/use';
 import { S } from 'mockjs';
 import {defineComponent, proxyRefs, reactive,getCurrentInstance} from 'vue';
 export default defineComponent({
@@ -70,6 +71,12 @@ export default defineComponent({
                     console.log(res)
                     if(res.data.code==0){
                        proxy.$toast.success(res.data.data.msg);
+                       window.sessionStorage.setItem("token",res.data.data.token);
+                        
+                       proxy.$router.push({
+                           path: '/home',
+                       });
+                       
                     }else{
                        proxy.$toast.fail(res.data.data.msg);
                     }
