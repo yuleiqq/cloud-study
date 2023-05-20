@@ -1,3 +1,4 @@
-/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/cadd_project.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/main.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/helloword.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

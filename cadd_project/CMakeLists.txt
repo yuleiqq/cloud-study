@@ -3,4 +3,5 @@ project(cadd_project)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(cadd_project main.cpp)
+add_executable(main main.cpp)
+add_executable(helloword day1/helloword.cpp)

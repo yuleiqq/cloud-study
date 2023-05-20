@@ -25,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
         name: 'HomeTop',
         component: ()=>import('../components/Home/components/top.vue')
       },
+      {
+        path: '/shopCart',
+        name: 'ShopCart',
+        component: ()=>import('../components/Shop/shopCart.vue')
+      },
     ]
   },
 ]

@@ -1,0 +1,23 @@
+
+jwt:
+  # Jwt
+  tokenHeader: Authorization
+  # Jwt 秘钥
+  secret: sec-sys
+  # Jwt 过期时间
+  expiration: 604800
+  # Jwt
+  tokenHead: Bearer
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345678
+    url: jdbc:mysql://localhost:3306/oauthdb?useUnicode=true&characterEncoding=utf8&SSL=false、
+
+
+#打印SQL日志
+mybatis-plus:
+  configuration:
+    log-impl:  org.apache.ibatis.logging.stdout.StdOutImpl

@@ -42,7 +42,6 @@ import {defineComponent, proxyRefs, reactive,getCurrentInstance} from 'vue';
 export default defineComponent({
 
         name:'Login',
-   
         setup(){
             const {proxy}:any  = getCurrentInstance();
 
@@ -52,11 +51,7 @@ export default defineComponent({
                 'https://file.xdclass.net/video/2021/59-Postman/59lbt.png'
             ])
 
-            //登录使用的账号信息
-            const user = reactive({
-                name: '',
-                pwd:''
-            });
+        
             
             //发送登录请求
             function toLogin(){   

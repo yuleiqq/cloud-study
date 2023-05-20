@@ -12,7 +12,7 @@
     <!-- 热门视频 -->
     <div class="hotVideo">
         <van-grid :border="false" :column-num="2">
-            <van-grid-item v-for="(video,index) in hotVideos" :key="index">
+            <van-grid-item v-for="(video,index) in hotVideos" :key="index" @click="tocart(video)">
               <van-image :src="video.img" />
             </van-grid-item>
         </van-grid>
@@ -21,6 +21,7 @@
 </template>
 <script lang="ts">
 import {defineComponent, getCurrentInstance,ref} from 'vue';
+import {useStore} from 'vuex'
 export default defineComponent({
         name: 'HomeTop',
         setup(){
@@ -45,12 +46,25 @@ export default defineComponent({
                     console.log(error.data)
                 });
             }
-
             getSource();
+
+
+            const store= useStore();
+            //定义添加商品到购物车方法
+            function tocart(item:any){
+              console.log(item)
+              proxy.$toast.success('添加购物车success!');
+              //调用vuex 中mutation定义的tocart 方法
+              store.commit('tocart',item);
+              //查询
+              store.commit('getcart');
+
+            }
 
             return {
                 images,
-                hotVideos
+                hotVideos,
+                tocart
             }
 
         }
