@@ -30,7 +30,10 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -60,7 +63,10 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -78,6 +84,13 @@
 					"id" : "arrayzhizhen::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-arrayzhizhen-Debug-1e871ca0462ce7a7c634.json",
 					"name" : "arrayzhizhen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "chat1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-chat1-Debug-dca763d8b98f57e958e7.json",
+					"name" : "chat1",
 					"projectIndex" : 0
 				},
 				{
@@ -145,6 +158,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "swaptest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-swaptest-Debug-56bad64087c5aaf8de4c.json",
+					"name" : "swaptest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "vectortest::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-vectortest-Debug-395c8e45049f675c264f.json",
 					"name" : "vectortest",
@@ -162,6 +182,13 @@
 					"id" : "xunhuan::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-xunhuan-Debug-67a8c177c2844e3857f3.json",
 					"name" : "xunhuan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yinyong2test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yinyong2test-Debug-f7ff0946957adf0d8ac5.json",
+					"name" : "yinyong2test",
 					"projectIndex" : 0
 				},
 				{

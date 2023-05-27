@@ -536,6 +536,99 @@ build hanshu3: CXX_EXECUTABLE_LINKER__hanshu3_Debug CMakeFiles/hanshu3.dir/hansh
   TARGET_FILE = hanshu3
   TARGET_PDB = hanshu3.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target swaptest
+
+
+#############################################
+# Order-only phony target for swaptest
+
+build cmake_object_order_depends_target_swaptest: phony || CMakeFiles/swaptest.dir
+
+build CMakeFiles/swaptest.dir/yinyong/swaptest.cpp.o: CXX_COMPILER__swaptest_Debug /Users/yulei/cloud-study/cadd_project/yinyong/swaptest.cpp || cmake_object_order_depends_target_swaptest
+  DEP_FILE = CMakeFiles/swaptest.dir/yinyong/swaptest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/swaptest.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaptest.dir/yinyong
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target swaptest
+
+
+#############################################
+# Link the executable swaptest
+
+build swaptest: CXX_EXECUTABLE_LINKER__swaptest_Debug CMakeFiles/swaptest.dir/yinyong/swaptest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/swaptest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = swaptest
+  TARGET_PDB = swaptest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target yinyong2test
+
+
+#############################################
+# Order-only phony target for yinyong2test
+
+build cmake_object_order_depends_target_yinyong2test: phony || CMakeFiles/yinyong2test.dir
+
+build CMakeFiles/yinyong2test.dir/yinyong/yinyong2test.cpp.o: CXX_COMPILER__yinyong2test_Debug /Users/yulei/cloud-study/cadd_project/yinyong/yinyong2test.cpp || cmake_object_order_depends_target_yinyong2test
+  DEP_FILE = CMakeFiles/yinyong2test.dir/yinyong/yinyong2test.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/yinyong2test.dir
+  OBJECT_FILE_DIR = CMakeFiles/yinyong2test.dir/yinyong
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target yinyong2test
+
+
+#############################################
+# Link the executable yinyong2test
+
+build yinyong2test: CXX_EXECUTABLE_LINKER__yinyong2test_Debug CMakeFiles/yinyong2test.dir/yinyong/yinyong2test.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/yinyong2test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = yinyong2test
+  TARGET_PDB = yinyong2test.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target chat1
+
+
+#############################################
+# Order-only phony target for chat1
+
+build cmake_object_order_depends_target_chat1: phony || CMakeFiles/chat1.dir
+
+build CMakeFiles/chat1.dir/yinyong/chat/chat1.cpp.o: CXX_COMPILER__chat1_Debug /Users/yulei/cloud-study/cadd_project/yinyong/chat/chat1.cpp || cmake_object_order_depends_target_chat1
+  DEP_FILE = CMakeFiles/chat1.dir/yinyong/chat/chat1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/chat1.dir
+  OBJECT_FILE_DIR = CMakeFiles/chat1.dir/yinyong/chat
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target chat1
+
+
+#############################################
+# Link the executable chat1
+
+build chat1: CXX_EXECUTABLE_LINKER__chat1_Debug CMakeFiles/chat1.dir/yinyong/chat/chat1.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/chat1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = chat1
+  TARGET_PDB = chat1.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -570,7 +663,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/cadd_project/cmake-build-debug
 
-build all: phony main helloword yuanzhu shuchu xunhuan fortest vectortest zhizhen voidtest referencetest arraytest neicun arrayzhizhen hanshu1 hanshu2 hanshu3
+build all: phony main helloword yuanzhu shuchu xunhuan fortest vectortest zhizhen voidtest referencetest arraytest neicun arrayzhizhen hanshu1 hanshu2 hanshu3 swaptest yinyong2test chat1
 
 # =============================================================================
 # Built-in targets

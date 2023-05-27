@@ -14,5 +14,8 @@
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/hanshu1.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/hanshu2.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/hanshu3.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/swaptest.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/yinyong2test.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/chat1.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
