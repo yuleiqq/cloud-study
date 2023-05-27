@@ -1,0 +1,177 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cadd_project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "arraytest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arraytest-Debug-7650e47cbcede715c0ec.json",
+					"name" : "arraytest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arrayzhizhen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arrayzhizhen-Debug-1e871ca0462ce7a7c634.json",
+					"name" : "arrayzhizhen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fortest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fortest-Debug-84f7af298887d8a38ed6.json",
+					"name" : "fortest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_princess::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_princess-Debug-521aa3c86c562ce7d7d1.json",
+					"name" : "game_princess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "helloword::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-helloword-Debug-5e0afebcefa5c28e55cf.json",
+					"name" : "helloword",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-060c6a83853dea842cfb.json",
+					"name" : "main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "neicun::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-neicun-Debug-a839a71f6a01ab35c500.json",
+					"name" : "neicun",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "referencetest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-referencetest-Debug-3eb2263e76496c8b8a9e.json",
+					"name" : "referencetest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "shuchu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-shuchu-Debug-300b58517129e6ef2dce.json",
+					"name" : "shuchu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vectortest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vectortest-Debug-395c8e45049f675c264f.json",
+					"name" : "vectortest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "voidtest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-voidtest-Debug-05bba896ac29e300be85.json",
+					"name" : "voidtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xunhuan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xunhuan-Debug-67a8c177c2844e3857f3.json",
+					"name" : "xunhuan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yuanzhu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yuanzhu-Debug-bf301544e31d83d78d79.json",
+					"name" : "yuanzhu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zhizhen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zhizhen-Debug-905bd3981a9c25bc8f1c.json",
+					"name" : "zhizhen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/yulei/cloud-study/cadd_project/cmake-build-debug",
+		"source" : "/Users/yulei/cloud-study/cadd_project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

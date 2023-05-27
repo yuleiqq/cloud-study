@@ -5,6 +5,7 @@
 #include "stdio.h"
 
 /**
+ *
  * prinf()函数 使用* :   其中的 * 表示一个通配符
  * @return
  */

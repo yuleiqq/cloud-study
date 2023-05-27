@@ -80,11 +80,11 @@ build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o
 
 build cmake_object_order_depends_target_helloword: phony || CMakeFiles/helloword.dir
 
-build CMakeFiles/helloword.dir/day1/helloword.cpp.o: CXX_COMPILER__helloword_Debug /Users/yulei/cloud-study/cadd_project/day1/helloword.cpp || cmake_object_order_depends_target_helloword
-  DEP_FILE = CMakeFiles/helloword.dir/day1/helloword.cpp.o.d
+build CMakeFiles/helloword.dir/ch1/helloword.cpp.o: CXX_COMPILER__helloword_Debug /Users/yulei/cloud-study/cadd_project/ch1/helloword.cpp || cmake_object_order_depends_target_helloword
+  DEP_FILE = CMakeFiles/helloword.dir/ch1/helloword.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
   OBJECT_DIR = CMakeFiles/helloword.dir
-  OBJECT_FILE_DIR = CMakeFiles/helloword.dir/day1
+  OBJECT_FILE_DIR = CMakeFiles/helloword.dir/ch1
 
 
 # =============================================================================
@@ -94,13 +94,385 @@ build CMakeFiles/helloword.dir/day1/helloword.cpp.o: CXX_COMPILER__helloword_Deb
 #############################################
 # Link the executable helloword
 
-build helloword: CXX_EXECUTABLE_LINKER__helloword_Debug CMakeFiles/helloword.dir/day1/helloword.cpp.o
+build helloword: CXX_EXECUTABLE_LINKER__helloword_Debug CMakeFiles/helloword.dir/ch1/helloword.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
   OBJECT_DIR = CMakeFiles/helloword.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = helloword
   TARGET_PDB = helloword.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target yuanzhu
+
+
+#############################################
+# Order-only phony target for yuanzhu
+
+build cmake_object_order_depends_target_yuanzhu: phony || CMakeFiles/yuanzhu.dir
+
+build CMakeFiles/yuanzhu.dir/ch1/yuanzhu.cpp.o: CXX_COMPILER__yuanzhu_Debug /Users/yulei/cloud-study/cadd_project/ch1/yuanzhu.cpp || cmake_object_order_depends_target_yuanzhu
+  DEP_FILE = CMakeFiles/yuanzhu.dir/ch1/yuanzhu.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/yuanzhu.dir
+  OBJECT_FILE_DIR = CMakeFiles/yuanzhu.dir/ch1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target yuanzhu
+
+
+#############################################
+# Link the executable yuanzhu
+
+build yuanzhu: CXX_EXECUTABLE_LINKER__yuanzhu_Debug CMakeFiles/yuanzhu.dir/ch1/yuanzhu.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/yuanzhu.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = yuanzhu
+  TARGET_PDB = yuanzhu.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target shuchu
+
+
+#############################################
+# Order-only phony target for shuchu
+
+build cmake_object_order_depends_target_shuchu: phony || CMakeFiles/shuchu.dir
+
+build CMakeFiles/shuchu.dir/ch1/shuchu.cpp.o: CXX_COMPILER__shuchu_Debug /Users/yulei/cloud-study/cadd_project/ch1/shuchu.cpp || cmake_object_order_depends_target_shuchu
+  DEP_FILE = CMakeFiles/shuchu.dir/ch1/shuchu.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/shuchu.dir
+  OBJECT_FILE_DIR = CMakeFiles/shuchu.dir/ch1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target shuchu
+
+
+#############################################
+# Link the executable shuchu
+
+build shuchu: CXX_EXECUTABLE_LINKER__shuchu_Debug CMakeFiles/shuchu.dir/ch1/shuchu.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/shuchu.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = shuchu
+  TARGET_PDB = shuchu.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target xunhuan
+
+
+#############################################
+# Order-only phony target for xunhuan
+
+build cmake_object_order_depends_target_xunhuan: phony || CMakeFiles/xunhuan.dir
+
+build CMakeFiles/xunhuan.dir/ch2/xunhuan.cpp.o: CXX_COMPILER__xunhuan_Debug /Users/yulei/cloud-study/cadd_project/ch2/xunhuan.cpp || cmake_object_order_depends_target_xunhuan
+  DEP_FILE = CMakeFiles/xunhuan.dir/ch2/xunhuan.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/xunhuan.dir
+  OBJECT_FILE_DIR = CMakeFiles/xunhuan.dir/ch2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target xunhuan
+
+
+#############################################
+# Link the executable xunhuan
+
+build xunhuan: CXX_EXECUTABLE_LINKER__xunhuan_Debug CMakeFiles/xunhuan.dir/ch2/xunhuan.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/xunhuan.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = xunhuan
+  TARGET_PDB = xunhuan.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target fortest
+
+
+#############################################
+# Order-only phony target for fortest
+
+build cmake_object_order_depends_target_fortest: phony || CMakeFiles/fortest.dir
+
+build CMakeFiles/fortest.dir/ch2/fortest.cpp.o: CXX_COMPILER__fortest_Debug /Users/yulei/cloud-study/cadd_project/ch2/fortest.cpp || cmake_object_order_depends_target_fortest
+  DEP_FILE = CMakeFiles/fortest.dir/ch2/fortest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/fortest.dir
+  OBJECT_FILE_DIR = CMakeFiles/fortest.dir/ch2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target fortest
+
+
+#############################################
+# Link the executable fortest
+
+build fortest: CXX_EXECUTABLE_LINKER__fortest_Debug CMakeFiles/fortest.dir/ch2/fortest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/fortest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = fortest
+  TARGET_PDB = fortest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target vectortest
+
+
+#############################################
+# Order-only phony target for vectortest
+
+build cmake_object_order_depends_target_vectortest: phony || CMakeFiles/vectortest.dir
+
+build CMakeFiles/vectortest.dir/ch2/vectortest.cpp.o: CXX_COMPILER__vectortest_Debug /Users/yulei/cloud-study/cadd_project/ch2/vectortest.cpp || cmake_object_order_depends_target_vectortest
+  DEP_FILE = CMakeFiles/vectortest.dir/ch2/vectortest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/vectortest.dir
+  OBJECT_FILE_DIR = CMakeFiles/vectortest.dir/ch2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vectortest
+
+
+#############################################
+# Link the executable vectortest
+
+build vectortest: CXX_EXECUTABLE_LINKER__vectortest_Debug CMakeFiles/vectortest.dir/ch2/vectortest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/vectortest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = vectortest
+  TARGET_PDB = vectortest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zhizhen
+
+
+#############################################
+# Order-only phony target for zhizhen
+
+build cmake_object_order_depends_target_zhizhen: phony || CMakeFiles/zhizhen.dir
+
+build CMakeFiles/zhizhen.dir/ch3/zhizhen.cpp.o: CXX_COMPILER__zhizhen_Debug /Users/yulei/cloud-study/cadd_project/ch3/zhizhen.cpp || cmake_object_order_depends_target_zhizhen
+  DEP_FILE = CMakeFiles/zhizhen.dir/ch3/zhizhen.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/zhizhen.dir
+  OBJECT_FILE_DIR = CMakeFiles/zhizhen.dir/ch3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zhizhen
+
+
+#############################################
+# Link the executable zhizhen
+
+build zhizhen: CXX_EXECUTABLE_LINKER__zhizhen_Debug CMakeFiles/zhizhen.dir/ch3/zhizhen.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/zhizhen.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = zhizhen
+  TARGET_PDB = zhizhen.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target voidtest
+
+
+#############################################
+# Order-only phony target for voidtest
+
+build cmake_object_order_depends_target_voidtest: phony || CMakeFiles/voidtest.dir
+
+build CMakeFiles/voidtest.dir/ch3/voidtest.cpp.o: CXX_COMPILER__voidtest_Debug /Users/yulei/cloud-study/cadd_project/ch3/voidtest.cpp || cmake_object_order_depends_target_voidtest
+  DEP_FILE = CMakeFiles/voidtest.dir/ch3/voidtest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/voidtest.dir
+  OBJECT_FILE_DIR = CMakeFiles/voidtest.dir/ch3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target voidtest
+
+
+#############################################
+# Link the executable voidtest
+
+build voidtest: CXX_EXECUTABLE_LINKER__voidtest_Debug CMakeFiles/voidtest.dir/ch3/voidtest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/voidtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = voidtest
+  TARGET_PDB = voidtest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target referencetest
+
+
+#############################################
+# Order-only phony target for referencetest
+
+build cmake_object_order_depends_target_referencetest: phony || CMakeFiles/referencetest.dir
+
+build CMakeFiles/referencetest.dir/ch3/referencetest.cpp.o: CXX_COMPILER__referencetest_Debug /Users/yulei/cloud-study/cadd_project/ch3/referencetest.cpp || cmake_object_order_depends_target_referencetest
+  DEP_FILE = CMakeFiles/referencetest.dir/ch3/referencetest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/referencetest.dir
+  OBJECT_FILE_DIR = CMakeFiles/referencetest.dir/ch3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target referencetest
+
+
+#############################################
+# Link the executable referencetest
+
+build referencetest: CXX_EXECUTABLE_LINKER__referencetest_Debug CMakeFiles/referencetest.dir/ch3/referencetest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/referencetest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = referencetest
+  TARGET_PDB = referencetest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target arraytest
+
+
+#############################################
+# Order-only phony target for arraytest
+
+build cmake_object_order_depends_target_arraytest: phony || CMakeFiles/arraytest.dir
+
+build CMakeFiles/arraytest.dir/ch3/arraytest.cpp.o: CXX_COMPILER__arraytest_Debug /Users/yulei/cloud-study/cadd_project/ch3/arraytest.cpp || cmake_object_order_depends_target_arraytest
+  DEP_FILE = CMakeFiles/arraytest.dir/ch3/arraytest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/arraytest.dir
+  OBJECT_FILE_DIR = CMakeFiles/arraytest.dir/ch3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target arraytest
+
+
+#############################################
+# Link the executable arraytest
+
+build arraytest: CXX_EXECUTABLE_LINKER__arraytest_Debug CMakeFiles/arraytest.dir/ch3/arraytest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/arraytest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = arraytest
+  TARGET_PDB = arraytest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target neicun
+
+
+#############################################
+# Order-only phony target for neicun
+
+build cmake_object_order_depends_target_neicun: phony || CMakeFiles/neicun.dir
+
+build CMakeFiles/neicun.dir/ch4/neicun.cpp.o: CXX_COMPILER__neicun_Debug /Users/yulei/cloud-study/cadd_project/ch4/neicun.cpp || cmake_object_order_depends_target_neicun
+  DEP_FILE = CMakeFiles/neicun.dir/ch4/neicun.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/neicun.dir
+  OBJECT_FILE_DIR = CMakeFiles/neicun.dir/ch4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target neicun
+
+
+#############################################
+# Link the executable neicun
+
+build neicun: CXX_EXECUTABLE_LINKER__neicun_Debug CMakeFiles/neicun.dir/ch4/neicun.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/neicun.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = neicun
+  TARGET_PDB = neicun.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target arrayzhizhen
+
+
+#############################################
+# Order-only phony target for arrayzhizhen
+
+build cmake_object_order_depends_target_arrayzhizhen: phony || CMakeFiles/arrayzhizhen.dir
+
+build CMakeFiles/arrayzhizhen.dir/ch4/arrayzhizhen.cpp.o: CXX_COMPILER__arrayzhizhen_Debug /Users/yulei/cloud-study/cadd_project/ch4/arrayzhizhen.cpp || cmake_object_order_depends_target_arrayzhizhen
+  DEP_FILE = CMakeFiles/arrayzhizhen.dir/ch4/arrayzhizhen.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/arrayzhizhen.dir
+  OBJECT_FILE_DIR = CMakeFiles/arrayzhizhen.dir/ch4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target arrayzhizhen
+
+
+#############################################
+# Link the executable arrayzhizhen
+
+build arrayzhizhen: CXX_EXECUTABLE_LINKER__arrayzhizhen_Debug CMakeFiles/arrayzhizhen.dir/ch4/arrayzhizhen.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/arrayzhizhen.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = arrayzhizhen
+  TARGET_PDB = arrayzhizhen.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target game_princess
+
+
+#############################################
+# Order-only phony target for game_princess
+
+build cmake_object_order_depends_target_game_princess: phony || CMakeFiles/game_princess.dir
+
+build CMakeFiles/game_princess.dir/youxi/game_princess.cpp.o: CXX_COMPILER__game_princess_Debug /Users/yulei/cloud-study/cadd_project/youxi/game_princess.cpp || cmake_object_order_depends_target_game_princess
+  DEP_FILE = CMakeFiles/game_princess.dir/youxi/game_princess.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/game_princess.dir
+  OBJECT_FILE_DIR = CMakeFiles/game_princess.dir/youxi
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target game_princess
+
+
+#############################################
+# Link the executable game_princess
+
+build game_princess: CXX_EXECUTABLE_LINKER__game_princess_Debug CMakeFiles/game_princess.dir/youxi/game_princess.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/game_princess.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = game_princess
+  TARGET_PDB = game_princess.dbg
 
 
 #############################################
@@ -136,7 +508,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/cadd_project/cmake-build-debug
 
-build all: phony main helloword
+build all: phony main helloword yuanzhu shuchu xunhuan fortest vectortest zhizhen voidtest referencetest arraytest neicun arrayzhizhen game_princess
 
 # =============================================================================
 # Built-in targets

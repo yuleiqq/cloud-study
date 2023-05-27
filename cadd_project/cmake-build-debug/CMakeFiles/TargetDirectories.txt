@@ -1,4 +1,16 @@
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/main.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/helloword.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/yuanzhu.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/shuchu.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/xunhuan.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/fortest.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/vectortest.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/zhizhen.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/voidtest.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/referencetest.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/arraytest.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/neicun.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/arrayzhizhen.dir
+/Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/game_princess.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/yulei/cloud-study/cadd_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
