@@ -444,35 +444,97 @@ build arrayzhizhen: CXX_EXECUTABLE_LINKER__arrayzhizhen_Debug CMakeFiles/arrayzh
   TARGET_PDB = arrayzhizhen.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target game_princess
+# Object build statements for EXECUTABLE target hanshu1
 
 
 #############################################
-# Order-only phony target for game_princess
+# Order-only phony target for hanshu1
 
-build cmake_object_order_depends_target_game_princess: phony || CMakeFiles/game_princess.dir
+build cmake_object_order_depends_target_hanshu1: phony || CMakeFiles/hanshu1.dir
 
-build CMakeFiles/game_princess.dir/youxi/game_princess.cpp.o: CXX_COMPILER__game_princess_Debug /Users/yulei/cloud-study/cadd_project/youxi/game_princess.cpp || cmake_object_order_depends_target_game_princess
-  DEP_FILE = CMakeFiles/game_princess.dir/youxi/game_princess.cpp.o.d
+build CMakeFiles/hanshu1.dir/hanshu/hanshu1.cpp.o: CXX_COMPILER__hanshu1_Debug /Users/yulei/cloud-study/cadd_project/hanshu/hanshu1.cpp || cmake_object_order_depends_target_hanshu1
+  DEP_FILE = CMakeFiles/hanshu1.dir/hanshu/hanshu1.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
-  OBJECT_DIR = CMakeFiles/game_princess.dir
-  OBJECT_FILE_DIR = CMakeFiles/game_princess.dir/youxi
+  OBJECT_DIR = CMakeFiles/hanshu1.dir
+  OBJECT_FILE_DIR = CMakeFiles/hanshu1.dir/hanshu
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target game_princess
+# Link build statements for EXECUTABLE target hanshu1
 
 
 #############################################
-# Link the executable game_princess
+# Link the executable hanshu1
 
-build game_princess: CXX_EXECUTABLE_LINKER__game_princess_Debug CMakeFiles/game_princess.dir/youxi/game_princess.cpp.o
+build hanshu1: CXX_EXECUTABLE_LINKER__hanshu1_Debug CMakeFiles/hanshu1.dir/hanshu/hanshu1.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
-  OBJECT_DIR = CMakeFiles/game_princess.dir
+  OBJECT_DIR = CMakeFiles/hanshu1.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = game_princess
-  TARGET_PDB = game_princess.dbg
+  TARGET_FILE = hanshu1
+  TARGET_PDB = hanshu1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target hanshu2
+
+
+#############################################
+# Order-only phony target for hanshu2
+
+build cmake_object_order_depends_target_hanshu2: phony || CMakeFiles/hanshu2.dir
+
+build CMakeFiles/hanshu2.dir/hanshu/hanshu2.cpp.o: CXX_COMPILER__hanshu2_Debug /Users/yulei/cloud-study/cadd_project/hanshu/hanshu2.cpp || cmake_object_order_depends_target_hanshu2
+  DEP_FILE = CMakeFiles/hanshu2.dir/hanshu/hanshu2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/hanshu2.dir
+  OBJECT_FILE_DIR = CMakeFiles/hanshu2.dir/hanshu
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target hanshu2
+
+
+#############################################
+# Link the executable hanshu2
+
+build hanshu2: CXX_EXECUTABLE_LINKER__hanshu2_Debug CMakeFiles/hanshu2.dir/hanshu/hanshu2.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/hanshu2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = hanshu2
+  TARGET_PDB = hanshu2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target hanshu3
+
+
+#############################################
+# Order-only phony target for hanshu3
+
+build cmake_object_order_depends_target_hanshu3: phony || CMakeFiles/hanshu3.dir
+
+build CMakeFiles/hanshu3.dir/hanshu/hanshu3.cpp.o: CXX_COMPILER__hanshu3_Debug /Users/yulei/cloud-study/cadd_project/hanshu/hanshu3.cpp || cmake_object_order_depends_target_hanshu3
+  DEP_FILE = CMakeFiles/hanshu3.dir/hanshu/hanshu3.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/hanshu3.dir
+  OBJECT_FILE_DIR = CMakeFiles/hanshu3.dir/hanshu
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target hanshu3
+
+
+#############################################
+# Link the executable hanshu3
+
+build hanshu3: CXX_EXECUTABLE_LINKER__hanshu3_Debug CMakeFiles/hanshu3.dir/hanshu/hanshu3.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
+  OBJECT_DIR = CMakeFiles/hanshu3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = hanshu3
+  TARGET_PDB = hanshu3.dbg
 
 
 #############################################
@@ -508,7 +570,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/yulei/cloud-study/cadd_project/cmake-build-debug
 
-build all: phony main helloword yuanzhu shuchu xunhuan fortest vectortest zhizhen voidtest referencetest arraytest neicun arrayzhizhen game_princess
+build all: phony main helloword yuanzhu shuchu xunhuan fortest vectortest zhizhen voidtest referencetest arraytest neicun arrayzhizhen hanshu1 hanshu2 hanshu3
 
 # =============================================================================
 # Built-in targets
