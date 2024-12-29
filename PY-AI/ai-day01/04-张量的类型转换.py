@@ -11,5 +11,3 @@ data = data.double()
 # data.int()
 
 
-
-
