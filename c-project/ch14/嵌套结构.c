@@ -40,7 +40,6 @@ int main (void){
 
     printf("Dear %s, \n\n",fellow.handle.first);
 
-
 }
 
 
