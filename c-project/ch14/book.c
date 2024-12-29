@@ -21,8 +21,17 @@ int main(void){
 
     struct  book library; // 把library 声明为一个book 类型的变量
 
-    printf("Please enter the book title. \n");
+    printf("请输入书名：. \n");
     s_gets(library.title , MAXTITL);  // 访问title 部分
+    printf("请输入作者姓名: ");
+    s_gets(library.author,MAXAUTL);
+    printf("请输入value. \n");
+    scanf("%f",&library.value);
+    printf("%s by %s: $%.2f\n",library.title,library.author,library.value);
+
+    printf("Done.\n");
+
+    return  0;
 
 }
 
@@ -36,7 +45,6 @@ char * s_gets( char * st ,int n){
     if(ret_val){
 
         find  = strchr(st,'\n'); //查找换行符
-
         if(find)  //如果地址不是NULL
             * find = '\0';  // 在此处放置一个空字符
         else
