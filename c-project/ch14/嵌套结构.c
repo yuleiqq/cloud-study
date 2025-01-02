@@ -31,6 +31,7 @@ struct  guy{
 
 int main (void){
 
+    //嵌套结构
     struct  guy fellow = {
             {"EVEN","Villard"},
             "grilled salom",

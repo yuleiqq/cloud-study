@@ -16,3 +16,6 @@ print('mydata2 shape',mydata2.size(),mydata2)
 torch.permute(data,[1,2,0])
 #方法2
 data.permute([1,2,0])
+
+
+
