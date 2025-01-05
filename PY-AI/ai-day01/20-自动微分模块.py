@@ -19,3 +19,6 @@ def test01():
      #backward函数计算的梯度值会存储在张量的grad变量中
      print("W的梯度：",w.grad)
      print("b的梯度",b.grad)
+
+
+test01()

@@ -15,5 +15,3 @@ print(type(data_numpy))
 
 
 
-
-
